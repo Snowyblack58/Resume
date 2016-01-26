@@ -125,9 +125,11 @@ p {
 
 #left-profile {
 	text-align: right;
+/*
 	display: inline-block;
 	vertical-align: middle;
 	width: 15%;
+*/
 }
 
 #profile .container h3 {
@@ -139,9 +141,11 @@ p {
 
 #mid-profile {
 	text-align: center;
+/*
 	display: inline-block;
 	vertical-align: middle;
 	width: 50%;
+*/
 }
 
 #profile-pic {
@@ -150,9 +154,11 @@ p {
 
 #right-profile {
 	text-align: left;
+/*
 	display: inline-block;
 	vertical-align: middle;
 	width: 15%;
+*/
 }
 
 #experiences {
