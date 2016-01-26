@@ -103,7 +103,7 @@ p {
 
 #profile {
 	text-align: center;
-	width: 90%;
+	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -120,7 +120,7 @@ p {
 }
 
 #profile .container {
-	width: 90%;
+	width: 100%;
 }
 
 #left-profile {
@@ -158,7 +158,7 @@ p {
 #experiences {
 	padding-top: 65px;
 	text-align: center;
-	width: 90%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -171,9 +171,9 @@ p {
 	font-size: 16px;
 }
 
-#experiences .container h3 {
+#experiences .container {
 	text-align: left;
-	padding-left: 12.5%;
+	width: 100%;
 }
 
 #experiences .highlight {
@@ -183,9 +183,10 @@ p {
 
 .experience {
 	display: block;
-	text-align: center;
+	text-align: left;
 }
 
+/*
 .experience>div {
 	display: inline-block;
 	width: 35%;
@@ -193,6 +194,7 @@ p {
 	vertical-align: top;
 	text-align: left;
 }
+*/
 
 .exp-name {
 	font-weight: bold;
