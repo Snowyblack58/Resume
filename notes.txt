@@ -1,0 +1,25 @@
+Profile
+- Name
+- Picture
+- Age
+- Location
+- About Me
+Experiences
+- Education
+- Work
+- Volunteer
+Abilities
+- Programming Languages
+- Software
+- Systems
+- Browsers
+Projects
+- 
+Contact
+- Email Form
+- Github Link
+- Linkedin Link
+
+Design Functionality
+- Must be MOUSE ONLY accessible
+- Navigation must have a one-click option
