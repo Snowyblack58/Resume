@@ -217,6 +217,7 @@ p {
 }
 
 #abilities {
+	padding-top: 65px;
 	text-align: center;
 	width: 75%;
 	margin: auto;
@@ -236,4 +237,14 @@ p {
 
 #abilities .glyphicon-gray {
 	color: #ddd;
+}
+
+.ability-table-left {
+	text-align: left;
+	width: 50%;
+}
+
+.ability-table-right {
+	text-align: right;
+	width: 50%;
 }

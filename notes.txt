@@ -40,12 +40,14 @@ Skills:
 1 C++
 
 Software:
-Blender
-Unity
-Brackets
-Windows
-Mac
-Git
-FileZilla
-Chrome
-GIMP
+5 Git
+5 Brackets
+5 Windows
+5 FileZilla
+5 Chrome
+4 Mac
+4 Sublime Text
+3 GIMP
+2 Blender
+2 iMacros
+2 Unity
