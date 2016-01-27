@@ -11,13 +11,16 @@ $(document).scroll(function(){
 	updateNavBar();
 });
 
+$(window).on("resize",function(){
+	initCheckpoints();
+});
+
 function initCheckpoints(){
 	checkpoints[0] = $("#profile").offset().top - $("nav").height();
 	checkpoints[1] = $("#experiences").offset().top - $("nav").height();
 	checkpoints[2] = $("#abilities").offset().top - $("nav").height();
 	checkpoints[3] = $("#projects").offset().top - $("nav").height();
 	checkpoints[4] = $("#contact").offset().top - $("nav").height();
-	console.log(checkpoints);
 	scrollCurrentFace();
 	scrollNewFace();
 	updateNavBar();

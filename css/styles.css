@@ -212,6 +212,10 @@ p, td, a {
 	margin-bottom: 0px;
 }
 
+.exp-date {
+	margin-bottom: 0px;
+}
+
 .exp-link, .exp-location {
 	display: inline;
 }
@@ -247,4 +251,8 @@ p, td, a {
 .ability-table-right {
 	text-align: right;
 	width: 50%;
+}
+
+#abilities tr:hover .glyphicon:not(.glyphicon-gray) {
+	color: #ff69b4;
 }
