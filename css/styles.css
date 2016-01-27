@@ -218,7 +218,7 @@ p {
 
 #abilities {
 	text-align: center;
-	width: 90%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -232,4 +232,8 @@ p {
 
 #abilities .glyphicon {
 	color: #2ecc71;
+}
+
+#abilities .glyphicon-gray {
+	color: #ddd;
 }

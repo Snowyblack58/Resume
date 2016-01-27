@@ -23,3 +23,29 @@ Contact
 Design Functionality
 - Must be MOUSE ONLY accessible
 - Navigation must have a one-click option
+
+Skills:
+5 Java
+5 Javascript
+5 JQuery
+5 HTML
+5 CSS
+5 Python
+4 Bootstrap Framework
+2 PHP
+2 JSON
+2 SQLite
+2 XML
+1 C#
+1 C++
+
+Software:
+Blender
+Unity
+Brackets
+Windows
+Mac
+Git
+FileZilla
+Chrome
+GIMP
