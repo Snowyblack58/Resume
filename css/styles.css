@@ -22,7 +22,7 @@ h3 {
 	font-size: 24px;
 }
 
-p {
+p, td, a {
 	font-size: 16px;
 }
 
