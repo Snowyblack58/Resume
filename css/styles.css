@@ -6,6 +6,16 @@ html,body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+body {
+	padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-top: 265px;
+	}
+}
+
 nav {
 	text-transform: capitalize;
 }
@@ -28,12 +38,14 @@ p, td, a {
 hr {
 	width: 35%;
 	border-width: 2px;
+	margin: 0 auto;
 }
 
 .info-section {
 	text-align: center;
 	width: 75%;
-	margin: 50px auto;
+	margin: -50px auto 50px;
+	padding-top: 100px;
 }
 
 .info-section>h2 {
@@ -61,6 +73,10 @@ hr {
 	top: 50%;
 	transform: translateY(-50%);
 	right: 15px;
+}
+
+#navbar-links li {
+	display: inline-block;
 }
 
 .icon {
@@ -140,6 +156,12 @@ hr {
 	vertical-align: middle;
 	width: 15%;
 */
+}
+
+@media screen and (max-width: 767px) {
+	#left-profile {
+		text-align: left;	
+	}
 }
 
 #profile .container h3 {
