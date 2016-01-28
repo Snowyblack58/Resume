@@ -37,8 +37,9 @@ p, td, a {
 
 hr {
 	width: 35%;
-	border-width: 2px;
+	border: solid 1px #000;
 	margin: 0 auto;
+	opacity: 0.12;
 }
 
 .info-section {
@@ -158,7 +159,7 @@ hr {
 */
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
 	#left-profile {
 		text-align: left;	
 	}
@@ -275,6 +276,21 @@ hr {
 .ability-table-right {
 	text-align: right;
 	width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1107px) {
+	table>tbody>tr>td.ability-table-left {
+		display: block;
+		width: 100%;
+		border-top: solid 1px rgba(0, 0, 0, 0.12);
+	}
+	
+	table>tbody>tr>td.ability-table-right {
+		display: block;
+		width: 100%;
+		border-top: none;
+		text-align: left;
+	}
 }
 
 #abilities tr:hover .glyphicon:not(.glyphicon-gray) {
