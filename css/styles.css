@@ -260,6 +260,11 @@ hr {
 	color: #2ecc71;
 }
 
+#abilities .container>p {
+	font-size: 1em;
+	text-align: left;
+}
+
 #abilities .glyphicon {
 	color: #2ecc71;
 }
