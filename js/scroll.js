@@ -84,8 +84,8 @@ function scrollCurrentFace(){
 
 function getCurrentCheckpointIndex(){
 	for(var cnt = 0; cnt < checkpoints.length; cnt++){
-		if(scrollY < checkpoints[cnt]){
-			return cnt;	
+		if(scrollY + 1 < checkpoints[cnt]){
+			return cnt;
 		}
 	}
 	console.log("MINOR ERROR");

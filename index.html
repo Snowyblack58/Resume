@@ -8,8 +8,8 @@
 		<title>David Zhao</title>
 
 		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<link href="normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
@@ -53,12 +53,13 @@
 					<li><a href="#experiences">experiences</a></li>
 					<li><a href="#abilities">abilities</a></li>
 					<li><a href="#projects">projects</a></li>
-					<li><a href="#contact">contact</a></li>
 				</ul>
+<!--
 				<ul id="navbar-links" class="nav navbar-nav navbar-right">
 					<li><a class="icon icon-github" target="_blank" href="https://github.com/Snowyblack58/">&nbsp;</a></li>
 					<li><a class="icon icon-linkedin" target="_blank" href="https://www.linkedin.com/in/davidzhao058">&nbsp;</a></li>
 				</ul>
+-->
 			</div>
 		</nav>
 		
@@ -206,11 +207,11 @@
 						<div class="col-sm-6">
 							<p class="exp-name">Hackathons</p>
 							<p class="exp-date"></p>
-							<p class="exp-location">VA</p>
+							<p class="exp-location">VA | MD</p>
 						</div>
 						<div class="col-sm-6">
 							<p class="exp-subtitle">Participant</p>
-							<p class="exp-description">I have attended three hackathons &mdash; PilotDC 2014, PilotDC 2015, and HackTJ 2015. I am currently looking at and applying for any hackathons reachable via bus.</p>
+							<p class="exp-description">I have attended five hackathons &mdash; PilotDC 2014, PilotDC 2015, HackTJ 2015, FirstHack 2016, and HackUMBC 2016. I participated as a student for all, but FirstHack, in which I mentored middle school students on App Inventor.</p>
 						</div>
 					</div>
 				</div>
@@ -509,16 +510,48 @@
 		<hr>
 		<div id="projects" class="info-section">
 			<h2>Projects</h2>
+			<div class="container">
+				<div class="row">
+					<div id="project-cubing" class="project col-sm-4">
+						<h3>TJCubing</h3>
+					</div>
+					<div id="project-binger" class="project col-sm-4">
+						<h3>Binger</h3>
+					</div>
+					<div id="project-cookiecoder" class="project col-sm-4">
+						<h3>Cookie Coder</h3>
+					</div>
+					<div id="project-gis" class="project col-sm-4">
+						<h3>GIS Database</h3>
+					</div>
+				</div>
+			</div>
 		</div>
-		<hr>
-		<div id="contact" class="info-section">
-			<h2>Contact</h2>
+		<div id="contact" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<ul id="contact-info" class="contact">
+							<li class="contact-info-email"><span class="glyphicon glyphicon-envelope
+" aria-hidden="true"></span> davidzhao058@gmail.com</li>
+							<li class="contact-info-phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (281) 961-7541</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul id="contact-links" class="contact">
+							<li class="icon icon-github"></li>
+							<li class="icon icon-linkedin"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="js/scroll.js"></script>
+		<script src="js/links.js"></script>
 	</body>
 </html>

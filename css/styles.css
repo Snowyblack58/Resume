@@ -4,6 +4,7 @@ html,body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
 }
 
 body {
@@ -49,6 +50,10 @@ hr {
 	padding-top: 100px;
 }
 
+.container {
+	width: 100%;
+}
+
 .info-section>h2 {
 	margin: 0 0 10px;
 }
@@ -68,44 +73,6 @@ hr {
 	margin: auto;
 }
 
-
-#navbar-links {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 15px;
-}
-
-#navbar-links li {
-	display: inline-block;
-}
-
-.icon {
-	margin: 5px;
-	width: 32px;
-	height: 32px;
-}
-
-.icon-github {
-	background:	url(../raw/GitHub-Mark-64px.png);
-	background-size: cover;
-}
-
-.icon-github:hover {
-	background:	url(../raw/GitHub-Mark-Light-64px.png);
-	background-size: cover;
-}
-
-.icon-linkedin {
-	background:	url(../raw/In-Black-128px-TM.png);
-	background-size: cover;
-}
-
-.icon-linkedin:hover {
-	background:	url(../raw/In-White-128px-TM.png);
-	background-size: cover;
-}
-
 #name {
 	width: 100%;
 	height: 100%;
@@ -117,6 +84,9 @@ hr {
 	background-image: url("../raw/cover-min.jpg");
 	background-size: cover;
 	background-position: bottom;
+	filter: saturate(1.25);
+	-webkit-filter: saturate(1.25);
+	margin-bottom: 50px;
 }
 
 #name h1 {
@@ -301,3 +271,116 @@ hr {
 #abilities tr:hover .glyphicon:not(.glyphicon-gray) {
 	color: #ff69b4;
 }
+
+.project {
+/*	box-shadow: 1px 1px 1px #CCC;*/
+	height: 200px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+
+.project:hover {
+/*	box-shadow: 2px 2px 2px #CCC;*/
+	filter: none;
+	-webkit-filter: none;
+	cursor: pointer;
+}
+
+.project:hover h3{
+	color: #000;
+	background-color: rgba(225,225,225,0.5);
+}
+
+.project h3 {
+	margin: 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	color: #FFF;
+	background-color: rgba(30,30,30,0.5);
+}
+
+#project-cubing {
+	background-image: url("../raw/cubing.png");
+}
+
+#project-binger {
+	background-image: url("../raw/binger.svg");
+}
+
+#project-cookiecoder {
+	background-image: url("../raw/cookiecoder.gif");
+}
+
+#project-gis {
+	background-image: url("../raw/cookiecoder.gif");
+}
+
+.footer {
+	min-height: 64px;
+	min-height: 4rem;
+	background: #34495e;
+}
+
+.contact {
+	display: inline-block;
+	list-style: none;
+	width: 100%;
+	height: 4rem;
+	margin: 0;
+	padding: 16px;
+	padding: 1rem;
+	line-height: 2rem;
+}
+
+#contact-info li {
+	display: inline-block;
+	color: #FFF;
+}
+
+#contact-links {
+	text-align: right;
+}
+#contact-links li {
+	display: inline-block;
+	width: 32px;
+	width: 2rem;
+	height: 32px;
+	height: 2rem;
+	margin-left: 8px;
+	margin-left: 0.5rem;
+	cursor: pointer;
+}
+
+.icon {
+}
+
+.icon-github {
+	background:	url(../raw/GitHub-Mark-Light-64px.png);
+	background-size: cover;
+}
+
+/*
+.icon-github:hover {
+	background:	url(../raw/GitHub-Mark-Light-64px.png);
+	background-size: cover;
+}
+*/
+
+.icon-linkedin {
+	background:	url(../raw/In-White-128px-TM.png);
+	background-size: cover;
+}
+
+/*
+.icon-linkedin:hover {
+	background:	url(../raw/In-White-128px-TM.png);
+	background-size: cover;
+}
+*/
