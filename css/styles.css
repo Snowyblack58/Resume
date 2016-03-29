@@ -1,30 +1,38 @@
 html,body {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
+/*
+	padding-top: 38px;
+	padding-top: 2.375rem;
+*/
 }
 
 body {
 	padding-top: 50px;
+	padding-top: 3.125rem;
 }
 
+/*
 @media (max-width: 767px) {
 	body {
 		padding-top: 265px;
 	}
 }
+*/
 
 nav {
 	text-transform: capitalize;
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 40px;
+	font-size: 2.5rem;
 	text-transform: uppercase;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	margin-bottom: 25px;
 }
 
@@ -73,11 +81,17 @@ hr {
 	margin: auto;
 }
 
+
+@media (max-width: 767px) {
+	#navbar-options {
+		display: none;	
+	}
+}
+
 #name {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	font-size: 72px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -92,6 +106,9 @@ hr {
 #name h1 {
 	margin: 0;
 	color: #FFF;
+	font-size: 80px;
+	font-size: 5rem;
+	
 }
 
 #profile {
@@ -203,51 +220,42 @@ hr {
 
 .exp-name {
 	font-weight: bold;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .exp-subtitle {
 	font-weight: bold;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .exp-date {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .exp-link, .exp-location {
 	display: inline;
 }
 
-#abilities {
-}
-
 #abilities .container {
 	width: 100%;
 }
-
 #abilities>h2 {
 	color: #2ecc71;
 }
-
 #abilities .container>p {
 	font-size: 1em;
 	text-align: left;
 }
-
 #abilities .glyphicon {
 	color: #2ecc71;
 }
-
 #abilities .glyphicon-gray {
 	color: #ddd;
 }
-
 .ability-table-left {
 	text-align: left;
 	width: 50%;
 }
-
 .ability-table-right {
 	text-align: right;
 	width: 50%;
@@ -272,6 +280,10 @@ hr {
 	color: #ff69b4;
 }
 
+
+#projects>h2 {
+	color: #e67e22;
+}
 .project {
 /*	box-shadow: 1px 1px 1px #CCC;*/
 	height: 200px;
@@ -282,21 +294,19 @@ hr {
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
 }
-
 .project:hover {
 /*	box-shadow: 2px 2px 2px #CCC;*/
 	filter: none;
 	-webkit-filter: none;
 	cursor: pointer;
 }
-
-.project:hover h3{
-	color: #000;
-	background-color: rgba(225,225,225,0.5);
+.project:hover h3 {
+	color: #FFF;
+/*	background-color: rgba(225,225,225,0.5);*/
+	background-color: rgba(230,126,34,0.8);
 }
-
 .project h3 {
-	margin: 0px;
+	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -305,19 +315,15 @@ hr {
 	color: #FFF;
 	background-color: rgba(30,30,30,0.5);
 }
-
 #project-cubing {
 	background-image: url("../raw/cubing.png");
 }
-
 #project-binger {
 	background-image: url("../raw/binger.svg");
 }
-
 #project-cookiecoder {
 	background-image: url("../raw/cookiecoder.gif");
 }
-
 #project-gis {
 	background-image: url("../raw/cookiecoder.gif");
 }
@@ -338,12 +344,10 @@ hr {
 	padding: 1rem;
 	line-height: 2rem;
 }
-
 #contact-info li {
 	display: inline-block;
 	color: #FFF;
 }
-
 #contact-links {
 	text-align: right;
 }
@@ -359,28 +363,11 @@ hr {
 }
 
 .icon {
+	background-size: cover;
 }
-
 .icon-github {
-	background:	url(../raw/GitHub-Mark-Light-64px.png);
-	background-size: cover;
+	background-image: url(../raw/GitHub-Mark-Light-64px.png);
 }
-
-/*
-.icon-github:hover {
-	background:	url(../raw/GitHub-Mark-Light-64px.png);
-	background-size: cover;
-}
-*/
-
 .icon-linkedin {
-	background:	url(../raw/In-White-128px-TM.png);
-	background-size: cover;
+	background-image: url(../raw/In-White-128px-TM.png);
 }
-
-/*
-.icon-linkedin:hover {
-	background:	url(../raw/In-White-128px-TM.png);
-	background-size: cover;
-}
-*/
