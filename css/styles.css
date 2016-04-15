@@ -37,6 +37,10 @@ hr {
 	opacity: 0.12;
 }
 
+.container {
+	width: 100%;
+}
+
 .info-section {
 	text-align: center;
 	width: 75%;
@@ -45,11 +49,6 @@ hr {
 	padding-top: 100px;
 	padding-top: 6.25rem;
 }
-
-.container {
-	width: 100%;
-}
-
 .info-section>h2 {
 	margin: 0 0 10px;
 	margin: 0 0 0.625rem;
@@ -58,20 +57,16 @@ hr {
 .navbar-brand {
 	text-transform: uppercase;
 }
-
 #cube {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 8px;
 	padding: 0.5rem;
 }
-
 #cube svg {
 	display: block;
 	margin: auto;
 }
-
-
 @media (max-width: 767px) {
 	#navbar-options {
 		display: none;	
@@ -93,7 +88,6 @@ hr {
 	margin-bottom: 50px;
 	margin-bottom: 3.125rem;
 }
-
 #name h1 {
 	margin: 0;
 	color: #FFF;
@@ -111,24 +105,21 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-#profile>h2{
+#profile .container {
+	width: 100%;
+}
+#profile>h2 {
 	color: #3498db;
 	margin-bottom: 10px;
 	margin-bottom: 0.625rem;
 }
-
-#profile>p{
+#profile>p {
 	font-size: 22px;
 	font-size: 1.375rem;
 	text-transform: lowercase;
 	font-style: italic;
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
-}
-
-#profile .container {
-	width: 100%;
 }
 
 #left-profile {
@@ -282,8 +273,14 @@ hr {
 	color: #FFF;
 	background-color: rgba(30,30,30,0.5);
 }
+#project-anacostiaparkapp {
+	background-image: url("../raw/anacostiaparkapp.png");
+}
 #project-cubing {
 	background-image: url("../raw/cubing.png");
+}
+#project-fourier {
+	background-image: url("../raw/fourier.png");
 }
 #project-binger {
 	background-image: url("../raw/binger.svg");
@@ -292,7 +289,7 @@ hr {
 	background-image: url("../raw/cookiecoder.gif");
 }
 #project-gis {
-	background-image: url("../raw/cookiecoder.gif");
+/*	background-image: url("../raw/cookiecoder.gif");*/
 }
 
 .footer {
