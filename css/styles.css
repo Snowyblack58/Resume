@@ -145,6 +145,8 @@ hr {
 }
 
 #profile-pic {
+	max-width: 375px;
+	box-shadow: 0 0 5px;
 	display: inline;
 }
 
@@ -276,6 +278,9 @@ hr {
 #project-anacostiaparkapp {
 	background-image: url("../raw/anacostiaparkapp.png");
 }
+#project-botjs2 {
+	background-image: url("../raw/messenger-logo.png");
+}
 #project-cubing {
 	background-image: url("../raw/cubing.png");
 }
@@ -289,7 +294,7 @@ hr {
 	background-image: url("../raw/cookiecoder.gif");
 }
 #project-gis {
-/*	background-image: url("../raw/cookiecoder.gif");*/
+	background-image: url("../raw/cookiecoder.gif");
 }
 
 .footer {

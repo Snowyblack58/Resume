@@ -1,4 +1,5 @@
-$("#project-anacostiaparkapp").click(function(){window.open("http://snowyblack58.github.io/AnacostiaAppPresentation/","_blank");});
+$("#project-anacostiaparkapp").click(function(){window.open("https://github.com/Snowyblack58/Anacostia-Park-App/","_blank");});
+$("#project-botjs2").click(function(){window.open("https://github.com/naitian/botjs2","_blank");});
 $("#project-cubing").click(function(){window.open("http://tjcubing.org","_blank");});
 $("#project-fourier").click(function(){window.open("https://github.com/Snowyblack58/FourierTransform","_blank");});
 $("#project-binger").click(function(){window.open("http://naitian.github.io/Binger/login.html","_blank");});
