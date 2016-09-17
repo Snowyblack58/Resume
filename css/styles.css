@@ -339,6 +339,25 @@ hr {
 	cursor: pointer;
 }
 
+#resume-download {
+	width: 100%;
+	height: 4rem;
+	padding: 1rem;
+	line-height: 2rem;
+	vertical-align: middle;
+	text-align: center;
+}
+#resume-download a {
+	text-decoration: none;
+	color: #FFF;
+	border: solid 2px #FFF;
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+}
+#resume-download a:hover {
+	border-color: #f1c40f;
+}
+
 .icon {
 	background-size: cover;
 }
