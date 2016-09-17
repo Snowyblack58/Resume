@@ -72,6 +72,14 @@ hr {
 		display: none;	
 	}
 }
+#navbar-contact {
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	padding-right: 12px;
+	vertical-align: middle;
+	text-transform: none;
+}
 
 #name {
 	width: 100%;
