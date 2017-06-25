@@ -284,6 +284,9 @@ hr {
 	background-color: rgba(30,30,30,0.5);
 }
 #project-cso {
+	/*background-image: url("../raw/cso-logo.png");*/
+}
+#project-cso {
 	background-image: url("../raw/cso-logo.png");
 }
 #project-anacostiaparkapp {
