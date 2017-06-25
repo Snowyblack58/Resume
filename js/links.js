@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 $("#project-cso").click(function(){window.open("https://docs.google.com/spreadsheets/d/1eodouvW5og_1Cx7edDbODiB06yO4zs8mqVRoF-y54FQ/edit?usp=sharing","_blank");});
+=======
+$("#project-gonad").click(function(){window.open("https://docs.google.com/spreadsheets/d/1eodouvW5og_1Cx7edDbODiB06yO4zs8mqVRoF-y54FQ/edit?usp=sharing","_blank");});
+>>>>>>> master
 $("#project-cso").click(function(){window.open("https://github.com/davidbzhao/CSO","_blank");});
 $("#project-anacostiaparkapp").click(function(){window.open("https://github.com/davidbzhao/Anacostia-Park-App/","_blank");});
 $("#project-botjs2").click(function(){window.open("https://github.com/naitian/botjs2","_blank");});
