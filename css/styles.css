@@ -6,37 +6,31 @@ html,body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 16px;
 }
-
 body {
 	padding-top: 50px;
 	padding-top: 3.125rem;
 }
-
-nav {
-	text-transform: capitalize;
-}
-
 h2 {
 	font-size: 40px;
 	font-size: 2.5rem;
-	text-transform: uppercase;
-	margin-bottom: 0;
-	margin-bottom: 25px;
-	margin-bottom: 1.5625rem;
+	text-transform: lowercase;
 	text-align: center;
 }
-
 h3 {
 	font-size: 24px;
 	font-size: 1.5rem;
+	text-transform: lowercase;
 }
-
 hr {
 	width: 35%;
 	border: solid 1px #000;
 	margin: 0 auto;
 	opacity: 0.12;
 }
+
+/********** **********
+*     INFO SECTION
+*********** **********/
 .info-section {
 	text-align: center;
 	width: 75%;
@@ -46,10 +40,13 @@ hr {
 	padding-top: 6.25rem;
 }
 .section-title {
-	margin: 0 0 10px;
-	margin: 0 0 0.625rem;
+	margin: 0 0 32px;
+	margin: 0 0 2rem;
 }
 
+/********** **********
+*        NAVBAR
+*********** **********/
 .navbar-brand {
 	text-transform: uppercase;
 }
@@ -66,6 +63,10 @@ hr {
 	display: block;
 	margin: auto;
 }
+
+/********** **********
+*   SECTION - NAME
+*********** **********/
 #name {
 	width: 100%;
 	height: 100%;
@@ -89,17 +90,17 @@ hr {
 	
 }
 
+/********** **********
+* SECTION - PROFILE
+*********** **********/
 #profile {
-	width: 75%;
+	/* Center horizontally and vertically */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-#profile .container {
-	width: 100%;
 }
 #profile .section-title {
 	color: #3498db;
@@ -112,95 +113,91 @@ hr {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
-
-#left-profile {
-	text-align: right;
-}
-
-@media (max-width: 767px) {
-	#left-profile {
-		text-align: left;	
-	}
-}
-
-#profile .container h3 {
+#profile h3 {
 	font-size: 24px;
 	font-size: 1.5rem;
-	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 600;
 	color: #3498db;
 }
 
-#mid-profile {
-	text-align: center;
+#left-profile {
+	text-align: left;
 }
-
+@media only screen and (min-width : 992px) {
+	#left-profile {
+		text-align: right;
+	}
+}
 #profile-pic {
 	max-width: 375px;
 	box-shadow: 0 0 5px;
 	display: inline;
 }
-
 #right-profile {
 	text-align: left;
 }
 
-#experiences {
-}
-
-#experiences .section-title {
-	color: #e74c3c;
-}
-
-#experiences a {
-	color: #e74c3c;	
-}
-
-#experiences .container {
-	text-align: left;
-	width: 100%;
-}
-
+/********** **********
+*SECTION - EXPERIENCES
+*********** **********/
+#experiences .section-title,
+#experiences a,
 #experiences .highlight {
 	color: #e74c3c;
+}
+#experiences .highlight {
 	font-style: italic;
 }
-
+#experiences h3 {
+	text-align: left;
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
+}
 .experience {
 	display: block;
 	text-align: left;
+	padding-left: 0;
+}
+.experience>div:last-child {
+	padding-left: 32px;
+	padding-left: 2rem;
+}
+@media only screen and (min-width : 768px) {
+	.experience {
+		padding-left: 16px;
+		padding-left: 1rem;
+	}
+	.experience>div:last-child {
+		padding-left: 0;
+	}
 }
 
-.exp-name {
-	font-weight: bold;
-	margin-bottom: 0;
-}
-
+.exp-name,
 .exp-subtitle {
-	font-weight: bold;
+	font-weight: 600;
 	margin-bottom: 0;
 }
-
 .exp-date {
 	margin-bottom: 0;
 }
-
-.exp-link, .exp-location {
+.exp-link,
+.exp-location {
 	display: inline;
 }
 
-#abilities .container {
-	width: 100%;
-}
-#abilities .section-title {
-	color: #2ecc71;
-}
-#abilities .container>p {
-	font-size: 1em;
-	text-align: left;
-}
+/********** **********
+* SECTION - ABILITIES
+*********** **********/
+#abilities .section-title,
 #abilities .glyphicon {
 	color: #2ecc71;
+}
+#abilities tr:hover .glyphicon:not(.glyphicon-gray) {
+	color: #ff69b4;
+}
+#abilities p {
+	font-size: 1em;
+	text-align: left;
 }
 #abilities .glyphicon-gray {
 	color: #ddd;
@@ -214,26 +211,10 @@ hr {
 	width: 50%;
 }
 
-@media (min-width: 768px) and (max-width: 1107px) {
-	table>tbody>tr>td.ability-table-left {
-		display: block;
-		width: 100%;
-		border-top: solid 1px rgba(0, 0, 0, 0.12);
-	}
-	
-	table>tbody>tr>td.ability-table-right {
-		display: block;
-		width: 100%;
-		border-top: none;
-		text-align: left;
-	}
-}
 
-#abilities tr:hover .glyphicon:not(.glyphicon-gray) {
-	color: #ff69b4;
-}
-
-
+/********** **********
+* SECTION - PROJECTS
+*********** **********/
 #projects .section-title {
 	color: #e67e22;
 }
@@ -291,6 +272,9 @@ hr {
 	padding-right: 0.25rem;
 }
 
+/********** **********
+*	    FOOTER
+*********** **********/
 .footer {
 	min-height: 64px;
 	min-height: 4rem;
