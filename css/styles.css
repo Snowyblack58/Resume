@@ -257,21 +257,19 @@ hr {
 .project {
 	height: 200px;
 	height: 16rem;
-	margin-bottom: 1rem;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	/*filter: gray;
-	filter: grayscale(1);
-	-webkit-filter: grayscale(1);*/
+	margin-bottom: 2rem;
 }
 .project-card {
 	width: 100%;
 	height: 100%;
-	padding: 2px;
+	padding: 1px;
 	box-shadow: 0 1px 4px #000;
 	background-color: #e67e22;
 	color: #fff;
+}
+.project-card:hover {
+	cursor: pointer;
+	box-shadow: 0 2px 8px #000; 
 }
 .project-image {
 	width: 100%;
@@ -298,30 +296,6 @@ hr {
 .project-description {
 	font-size: 14px;
 }
-/*#project-cso .project-image{
-	background-image: url("../raw/cso-logo.png");
-}*/
-/*#project-anacostiaparkapp .project-image {
-	background-image: url("../raw/anacostiaparkapp.png");
-}
-#project-botjs2 .project-image {
-	background-image: url("../raw/messenger-logo.png");
-}
-#project-cubing .project-image {
-	background-image: url("../raw/cubing.png");
-}
-#project-fourier .project-image {
-	background-image: url("../raw/fourier.png");
-}
-#project-binger .project-image {
-	background-image: url("../raw/binger.svg");
-}
-#project-cookiecoder .project-image {
-	background-image: url("../raw/cookiecoder.gif");
-}
-#project-gis .project-image {
-	background-image: url("../raw/cookiecoder.gif");
-}*/
 
 .footer {
 	min-height: 64px;
