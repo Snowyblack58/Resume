@@ -256,60 +256,72 @@ hr {
 }
 .project {
 	height: 200px;
-	height: 12.5rem;
+	height: 16rem;
+	margin-bottom: 1rem;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	filter: gray;
+	/*filter: gray;
 	filter: grayscale(1);
-	-webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(1);*/
 }
-.project:hover {
-	filter: none;
-	-webkit-filter: none;
-	cursor: pointer;
-}
-.project:hover h3 {
-	color: #FFF;
-	background-color: rgba(230,126,34,0.8);
-}
-.project h3 {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+.project-card {
 	width: 100%;
-	color: #FFF;
-	background-color: rgba(30,30,30,0.5);
+	height: 100%;
+	padding: 2px;
+	box-shadow: 0 1px 4px #000;
+	background-color: #e67e22;
+	color: #fff;
 }
-#project-cso {
-	/*background-image: url("../raw/cso-logo.png");*/
+.project-image {
+	width: 100%;
+	height: 60%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	position: relative;
 }
-#project-cso {
+.project-image img {
+	max-width: 80%;
+	max-height: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.project-title {
+	font-size: 18px;
+	margin-top: 4px;
+	font-weight: 600;
+}
+.project-description {
+	font-size: 14px;
+}
+/*#project-cso .project-image{
 	background-image: url("../raw/cso-logo.png");
-}
-#project-anacostiaparkapp {
+}*/
+/*#project-anacostiaparkapp .project-image {
 	background-image: url("../raw/anacostiaparkapp.png");
 }
-#project-botjs2 {
+#project-botjs2 .project-image {
 	background-image: url("../raw/messenger-logo.png");
 }
-#project-cubing {
+#project-cubing .project-image {
 	background-image: url("../raw/cubing.png");
 }
-#project-fourier {
+#project-fourier .project-image {
 	background-image: url("../raw/fourier.png");
 }
-#project-binger {
+#project-binger .project-image {
 	background-image: url("../raw/binger.svg");
 }
-#project-cookiecoder {
+#project-cookiecoder .project-image {
 	background-image: url("../raw/cookiecoder.gif");
 }
-#project-gis {
+#project-gis .project-image {
 	background-image: url("../raw/cookiecoder.gif");
-}
+}*/
 
 .footer {
 	min-height: 64px;
