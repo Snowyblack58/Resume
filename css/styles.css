@@ -23,6 +23,7 @@ h2 {
 	margin-bottom: 0;
 	margin-bottom: 25px;
 	margin-bottom: 1.5625rem;
+	text-align: center;
 }
 
 h3 {
@@ -44,7 +45,7 @@ hr {
 	padding-top: 100px;
 	padding-top: 6.25rem;
 }
-.info-section>h2 {
+.section-title {
 	margin: 0 0 10px;
 	margin: 0 0 0.625rem;
 }
@@ -100,10 +101,8 @@ hr {
 #profile .container {
 	width: 100%;
 }
-#profile>h2 {
+#profile .section-title {
 	color: #3498db;
-	margin-bottom: 10px;
-	margin-bottom: 0.625rem;
 }
 #profile>p {
 	font-size: 22px;
@@ -149,7 +148,7 @@ hr {
 #experiences {
 }
 
-#experiences>h2 {
+#experiences .section-title {
 	color: #e74c3c;
 }
 
@@ -193,7 +192,7 @@ hr {
 #abilities .container {
 	width: 100%;
 }
-#abilities>h2 {
+#abilities .section-title {
 	color: #2ecc71;
 }
 #abilities .container>p {
@@ -235,7 +234,7 @@ hr {
 }
 
 
-#projects>h2 {
+#projects .section-title {
 	color: #e67e22;
 }
 .project {
