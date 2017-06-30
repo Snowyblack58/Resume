@@ -16,6 +16,7 @@ $(window).on("resize",function(){
 });
 
 function initCheckpoints(){
+	console.log("Hi there :) If you want to check out the code, go to https://github.com/davidbzhao/Resume")
 	checkpoints[0] = $("#profile").offset().top;// - $("nav").height();
 	checkpoints[1] = $("#experiences").offset().top;// - $("nav").height();
 	checkpoints[2] = $("#abilities").offset().top;// - $("nav").height();
@@ -117,6 +118,9 @@ function distanceFromPreviousCheckpoint(ptIndex){
 function updateNavBar(){
 	$("#navbar-options li").removeClass("active");
 	if(getCurrentCheckpointIndex() > 0){
-		$("#navbar-options").children()[getCurrentCheckpointIndex() - 1].className = "active";
+		var activeNavbar = $("#navbar-options").children()[getCurrentCheckpointIndex() - 1]
+		if(activeNavbar){
+			activeNavbar.className = "active";
+		}
 	}
 }
