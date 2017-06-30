@@ -249,6 +249,7 @@ hr {
 	box-shadow: 0 1px 4px #000;
 	background-color: #e67e22;
 	color: #fff;
+	position: relative;
 }
 .project-card:hover {
 	cursor: pointer;
@@ -278,6 +279,16 @@ hr {
 }
 .project-description {
 	font-size: 14px;
+}
+.project-tags {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 12px;
+	font-size: 0.75rem;
+	margin: 0;
+	padding-right: 4px;
+	padding-right: 0.25rem;
 }
 
 .footer {
