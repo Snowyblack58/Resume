@@ -33,7 +33,7 @@ hr {
 *********** **********/
 .info-section {
 	text-align: center;
-	width: 75%;
+	width: 95%;
 	margin: -50px auto 50px;
 	margin: -3.125rem auto 3.125rem;
 	padding-top: 100px;
@@ -183,6 +183,10 @@ hr {
 .exp-link,
 .exp-location {
 	display: inline;
+}
+.exp-description {
+	text-align: justify;
+	text-align-last: left;
 }
 
 /********** **********
