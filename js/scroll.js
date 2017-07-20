@@ -15,6 +15,7 @@ $(window).on("resize",function(){
 	initCheckpoints();
 });
 
+
 function initCheckpoints(){
 	console.log("Hi there :) If you want to check out the code, go to https://github.com/davidbzhao/Resume")
 	checkpoints[0] = $("#profile").offset().top;// - $("nav").height();

@@ -6,7 +6,13 @@ define([
 ], function($, _, educationText, Experience){
     $(document).ready(function(){
         loadEducationExperiences();
+        $(window).scrollTop(sessionStorage.getItem("preRefreshPosition"));
+        initCheckpoints();
     })
+
+    $(window).unload(function() {
+        sessionStorage.setItem("preRefreshPosition", $(window).scrollTop());
+    });
 
     function loadEducationExperiences(){
         var educationJSON = JSON.parse(educationText);
