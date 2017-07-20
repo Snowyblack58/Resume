@@ -1,18 +1,15 @@
-[
-    {
-        "name": "University of Virginia",
-        "date": "Aug 2016 - May 2020",
-        "url": "http://engineering.virginia.edu/",
-        "location": "Charlottesville, VA",
-        "subtitle": "B.S. Computer Science",
-        "description": "I am a rising second year engineering student pursuing a B.S. in computer science with a potential second major in statistics and a focus in psychology. I have taken Program and Data Representation, Discrete Math, Linear Algebra, and Calculus-based Probability and will be taking graduate-level Machine Learning, Theory of Computation, Computer Architecture, and two statistics courses. <span class='highlight'>My main languages are Java, Python, C++, and Javascript.</span>"
-    },
-    {
-        "name": "Thomas Jefferson High School for Science and Technology",
-        "date": "Aug 2012 - Jun 2016",
-        "url": "https://tjhsst.edu",
-        "location": "Alexandria, VA",
-        "subtitle": "Web/Mobile App Development",
-        "description": "My high school experience established a solid foundation in object-oriented programming and data structures (<span class='highlight'>Java</span>). Following, I have taken two semester courses on artificial intelligence (<span class='highlight'>Python</span>), one semester course on mobile app development (<span class='highlight'>Java</span>, <span class='highlight'>XML</span>, <span class='highlight'>Git</span>) and another on web app development (<span class='highlight'>HTML</span>, <span class='highlight'>CSS</span>, <span class='highlight'>Javascript</span>, <span class='highlight'>PHP</span>, <span class='highlight'>SQLite</span>). My senior lab track is web and mobile app development."
-    }
-]
+[{
+	"name": "University of Virginia",
+	"date": "Aug 2016 - May 2020",
+	"url": "http://engineering.virginia.edu/",
+	"location": "Charlottesville, VA",
+	"subtitle": "B.S. Computer Science",
+	"description": "I am a rising second year engineering student pursuing a B.S. in computer science with a potential second major in statistics and a focus in psychology. I have taken Program and Data Representation, Discrete Math, Linear Algebra, and Calculus-based Probability and will be taking graduate-level Machine Learning, Theory of Computation, Computer Architecture, and two statistics courses. <span class=\"highlight\">My main languages are Java, Python, C++, and Javascript.</span>"
+}, {
+	"name": "Thomas Jefferson High School for Science and Technology",
+	"date": "Aug 2012 - Jun 2016",
+	"url": "https://tjhsst.edu",
+	"location": "Alexandria, VA",
+	"subtitle": "Web/Mobile App Development",
+	"description": "My high school experience established a solid foundation in object-oriented programming and data structures (<span class=\"highlight\">Java</span>). Following, I have taken two semester courses on artificial intelligence (<span class=\"highlight\">Python</span>), one semester course on mobile app development (<span class=\"highlight\">Java</span>, <span class=\"highlight\">XML</span>, <span class=\"highlight\">Git</span>) and another on web app development (<span class=\"highlight\">HTML</span>, <span class=\"highlight\">CSS</span>, <span class=\"highlight\">Javascript</span>, <span class=\"highlight\">PHP</span>, <span class=\"highlight\">SQLite</span>). My senior lab track is web and mobile app development."
+}]

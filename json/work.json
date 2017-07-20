@@ -1,0 +1,29 @@
+[{
+	"name": "Innovative Defense Technology",
+	"date": "May 2017 - Present",
+	"url": "https://idtus.com/",
+	"location": "Arlington, VA",
+	"subtitle": "Software Engineering Intern",
+	"description": "I currently work on fixing bugs and implementing features, on a stack of <span class=\"highlight\">PostGreSQL, C++, Java, Python, Typescript, and HTML/CSS</span>. Beyond just programming, I am learning a great deal on industry programming workflow and engineering practices."
+}, {
+	"name": "Geospatial Research Labratory",
+	"date": "Jun 2015 - Aug 2015",
+	"url": "http://www.erdc.usace.army.mil/Locations/GRL.aspx",
+	"location": "Alexandria, VA",
+	"subtitle": "Research Scientist Intern",
+	"description": "Under the US Army Corps of Engineers, I researched a spatial index called the pivot index. To improve analyses on large data sets, I used <span class=\"highlight\">Python</span> and formulated my own algorithms that pruned distance calculations from the setup and K nearest neighbor querying computations. Additionally, I gained valuable work experience that has proved helpful beyond just computer science."
+}, {
+	"name": "App Development Camp",
+	"date": "Jun 2014 - Aug 2014",
+	"url": "http://tjpartnershipfund.org/tjpartnershipfund/outreach/middle-schl-tech-institute/",
+	"location": "Fairfax, VA",
+	"subtitle": "Teaching Assistant",
+	"description": "Through the TJ Middle School Summer Tech Institute, I helped teach four 1-week summer camp sessions. During each session, we introduced the middle school students to <span class=\"highlight\">MIT App Inventor</span>, a drag-and-drop mobile app development software. I taught 120 students in both one-on-one situations and class-wide workshops."
+}, {
+	"name": "Independent",
+	"date": "Spring 2014 - Spring 2016",
+	"url": "",
+	"location": "Alexandria, VA",
+	"subtitle": "Math Tutor",
+	"description": "I tutored two students weekly in math topics from Pre-Algebra up to Pre-Calculus. Each session lasted an hour long in which I taught and reviewed material in preperation for their classes and exams."
+}]
