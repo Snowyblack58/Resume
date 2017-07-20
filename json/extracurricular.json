@@ -4,33 +4,33 @@
 	"url": "",
 	"location": "VA | MD | NJ",
 	"subtitle": "Organizer, Treasurer, Mentor, Participant",
-	"description": "Currently, I am treasurer of the executive board for Hack.UVA, on which I handle finances, contact potential sponsors, and organize caterers. I have participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. I have mentored at 2 middle school hackathons — FirstHack 2016 and HackCL 2016 — leading an App Inventor workshop in HackCL."
+	"description": "Current treasurer of the executive board for Hack.UVA. Handle finances, contact potential sponsors, and organize caterers. Participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. Mentored 2 middle school hackathons — FirstHack 2016 and HackCL 2016 — leading an App Inventor workshop in HackCL."
 }, {
 	"name": "Natural Language Processing Seminar/Research",
 	"date": "Feb 2017 - Present",
 	"url": "",
 	"location": "Charlottesville, VA",
 	"subtitle": "Student",
-	"description": "I am exploring natural language processing and deep learning with other students (PhD, grad, and undergrad). This experience entails a weekly meeting for delving into new papers and technologies as well as exploring neural networks and python libraries on my own accord."
+	"description": "Exploring natural language processing and deep learning with other students. Entails weekly meetings for delving into new papers and technologies. Exploring broader machine learning topics and python libraries on my own time."
 }, {
 	"name": "Music Program",
 	"date": "Oct 2007 - Present",
 	"url": "",
 	"location": "MD | TX | VA",
 	"subtitle": "Chief Technology Officer | Principal Trumpet",
-	"description": "I currently play in the Cavalier Symphony Orchestra (CSO) and the First Year Players pit orchestra. I was elected Chief Technology Officer of CSO; my main task is developing a <a href=\"https://github.com/davidbzhao/CSO\">website</a> for the orchestra which is currently under development. I have played trumpet for ten years now, participating in a variety of groups. Additionally, I have held positions such as section leader or quartermaster throughout the years."
+	"description": "Elected Chief Technology Officer of CSO; developing a <a href=\"https://github.com/davidbzhao/CSO\">website</a> for CSO. Currently play trumpet in the Cavalier Symphony Orchestra (CSO) and the First Year Players pit orchestra. Have played trumpet for ten years now."
 }, {
 	"name": "Rubik's Cube Club",
 	"date": "Sep 2013 - Jun 2016",
-	"url": "http://tjcubing.org/",
+	"url": "https://github.com/davidbzhao/TJCubing",
 	"location": "Alexandria, VA",
 	"subtitle": "Co-President/Team Member",
-	"description": "There were two major components to Rubik's Cube Club: the club and the team. I was a four-year member and co-president of the club; my responsibilities included recruiting members, managing the website, and communicating with members about club events. As a team member, I participated on an 8-person team that solves 25 cubes as quickly as possible. We currently hold the national record."
+	"description": "Elected co-president as four-year member of the club. Recruited members and managed website and mailing list. Participated on team that solved 25 cubes; broke national record."
 }, {
 	"name": "STEMBassadors",
 	"date": "Feb 2013 - Jun 2016",
-	"url": "https://www.tjhsst.edu/~emglazer/stembassadors/",
+	"url": "https://tjpartnershipfund.org/outreach/stembassadors/",
 	"location": "Alexandria, VA",
 	"subtitle": "Math Tutor",
-	"description": "For 90 minutes every Wednesday, I tutored Holmes Middle School sixth grade students in math topics. My student and I work through homework and classwork that they do not understand. The program is targeted at students who are considered at risk of failing the state mandated math exam."
+	"description": "Worked on math with Holmes Middle School sixth grade students considered at risk of failing the state mandated math exam."
 }]
