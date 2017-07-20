@@ -645,16 +645,36 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript">
 			if(!window.jQuery){
-				document.write("<script src='js/jquery-1.11.3.min.js'><\/script>");
+				document.write("<script src='js/libs/jquery-1.11.3.min.js'><\/script>");
 			}
 		</script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			if(typeof($.fn.modal) === 'undefined'){
-				document.write("<script src='js/bootstrap.min.js'><\/script>");
+				document.write("<script src='js/libs/bootstrap.min.js'><\/script>");
 		   }
 		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+		<script type="text/javascript">
+			if(typeof(_) === 'undefined'){
+				document.write("<script src='js/libs/underscore.min.js'><\/script>")
+			}
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+		<script type="text/javascript">
+			if(typeof(_) === 'undefined'){
+				document.write("<script src='js/libs/underscore.min.js'><\/script>")
+			}
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+		<script type="text/javascript">
+			if(typeof(_) === 'undefined'){
+				document.write("<script src='js/libs/require.js'><\/script>")
+			}
+		</script>
+		<script type="text/javascript" src="json/education.json"></script>
+		 <script type="text/javascript" src="js/app.js"></script> 
 		<script src="js/scroll.js"></script>
 		<script src="js/links.js"></script>
 	</body>

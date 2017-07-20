@@ -1,0 +1,10 @@
+educationJSON = [
+    {
+        "name": "University of Virginia",
+        "date": "Aug 2016 - May 2020",
+        "url": "http://engineering.virginia.edu/",
+        "location": "Charlottesville, VA",
+        "subtitle": "B.S. Computer Science",
+        "description": "I am a rising second year engineering student pursuing a B.S. in computer science with a potential second major in statistics and a focus in psychology. I have taken Program and Data Representation, Discrete Math, Linear Algebra, and Calculus-based Probability and will be taking graduate-level Machine Learning, Theory of Computation, Computer Architecture, and two statistics courses. <span class='highlight'>My main languages are Java, Python, C++, and Javascript.</span>"
+    }
+]
