@@ -4,21 +4,21 @@
 	"url": "https://idtus.com/",
 	"location": "Arlington, VA",
 	"subtitle": "Software Engineering Intern",
-	"description": "Main work on developing and inserting a chat tool into web application on a stack of <span class=\"highlight\">PostGreSQL, C++, Java, Python, Typescript, and HTML/CSS</span>. Learning industry programming workflow (especially with Git) and best engineering practices."
+	"description": "Mainly worked on developing and inserting a chat tool into a web application on a stack of <span class=\"highlight\">PostGreSQL, C++, Java, Python, Typescript, and HTML/CSS</span>. I have fixed various bugs and learned various libraries (Underscore, dhtmlx, Foundation) in addition to learning an industry programming workflow (merge requests and branch testing) and best engineering practices."
 }, {
 	"name": "USACE Geospatial Research Labratory",
 	"date": "Jun 2015 - Aug 2015",
 	"url": "http://www.erdc.usace.army.mil/Locations/GRL.aspx",
 	"location": "Alexandria, VA",
 	"subtitle": "Research Scientist Intern",
-	"description": "Researched a spatial index called the pivot index. Developed different <span class=\"highlight\">Python</span> implementations to optimize K nearest neighbor computational costs."
+	"description": "Researched a spatial index called the pivot index. I spent a few days reading papers on the pivot index, then developed different <span class=\"highlight\">Python</span> implementations to optimize K nearest neighbor computational costs."
 }, {
 	"name": "TJ MSTI App Development Camp",
 	"date": "Jun 2014 - Aug 2014",
 	"url": "http://tjpartnershipfund.org/tjpartnershipfund/outreach/middle-schl-tech-institute/",
 	"location": "Fairfax, VA",
 	"subtitle": "Teaching Assistant",
-	"description": "Taught four 1-week summer camp sessions, introducing middle school students to drag-and-drop mobile app development. Led workshops and worked one on one."
+	"description": "Taught four 1-week summer camp sessions, introducing middle school students to drag-and-drop mobile app development. I led workshops and worked one-on-one with students."
 }, {
 	"name": "Independent",
 	"date": "Spring 2014 - Spring 2016",

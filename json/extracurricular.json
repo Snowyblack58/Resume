@@ -4,33 +4,33 @@
 	"url": "",
 	"location": "VA | MD | NJ",
 	"subtitle": "Organizer, Treasurer, Mentor, Participant",
-	"description": "Current treasurer of the executive board for Hack.UVA. Handle finances, contact potential sponsors, and organize caterers. Participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. Mentored 2 middle school hackathons — FirstHack 2016 and HackCL 2016 — leading an App Inventor workshop in HackCL."
+	"description": "Current treasurer of the executive board for Hack.UVA, on which I handle finances, contact potential sponsors, and organize caterers. I have participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. I have mentored 2 middle school hackathons — FirstHack 2016 and HackCL 2016 — leading an App Inventor workshop in HackCL."
 }, {
 	"name": "Natural Language Processing Seminar/Research",
 	"date": "Feb 2017 - Present",
 	"url": "",
 	"location": "Charlottesville, VA",
 	"subtitle": "Student",
-	"description": "Exploring natural language processing and deep learning with other students. Entails weekly meetings for delving into new papers and technologies. Exploring broader machine learning topics through online lectures (Coursera and Stanford) and python libraries on my own time."
+	"description": "Exploring natural language processing and deep learning with other students, ranging from undergrad to PhD. Being a part of this research group entails weekly meetings for delving into new papers and technologies. On my own, I have been listening to online machine learning and natural language processing lectures (Coursera and Stanford) and have been programming small projects along the way."
 }, {
 	"name": "Music Program",
 	"date": "Oct 2007 - Present",
 	"url": "",
 	"location": "MD | TX | VA",
 	"subtitle": "Chief Technology Officer | Principal Trumpet",
-	"description": "Elected Chief Technology Officer of CSO; developing a <a href=\"https://github.com/davidbzhao/CSO\">website</a> for CSO. Currently play trumpet in the Cavalier Symphony Orchestra (CSO) and the First Year Players pit orchestra. Have played trumpet for ten years now."
+	"description": "Elected Chief Technology Officer of Cavalier Symphony Orchestra (CSO), for which I am developing a <a href=\"https://github.com/davidbzhao/CSO\">website</a>. As well, I play trumpet in CSO and in the First Year Players pit orchestra. I have played trumpet for ten years now."
 }, {
 	"name": "Rubik's Cube Club",
 	"date": "Sep 2013 - Jun 2016",
 	"url": "https://github.com/davidbzhao/TJCubing",
 	"location": "Alexandria, VA",
 	"subtitle": "Co-President/Team Member",
-	"description": "Elected co-president as four-year member of the club. Recruited members and managed website and mailing list. Participated on team that solved 25 cubes; broke national record."
+	"description": "Elected co-president as four-year member of the club. I recruited members, developed the website, and maintained the mailing list. Additionally, I participated on the competitive team that solved 25 cubes in national record time."
 }, {
 	"name": "STEMBassadors",
 	"date": "Feb 2013 - Jun 2016",
 	"url": "https://tjpartnershipfund.org/outreach/stembassadors/",
 	"location": "Alexandria, VA",
 	"subtitle": "Math Tutor",
-	"description": "Worked on math with Holmes Middle School sixth grade students considered at risk of failing the state mandated math exam."
+	"description": "Tutored math for Holmes Middle School sixth grade students considered at risk of failing the state mandated math exam."
 }]
