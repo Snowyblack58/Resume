@@ -15,7 +15,12 @@ define([
 		scrollNewFace();
 		updateNavBar();
 	});
-	$(document).ready(initCheckpoints);
+	$(document).ready(function(){
+		initCheckpoints();
+		scrollCurrentFace();
+		scrollNewFace();
+		updateNavBar();
+	});
 	$(window).resize(initCheckpoints);
 	$(document).on('DOMNodeInserted', '.experience', initCheckpoints);
 
