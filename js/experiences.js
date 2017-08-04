@@ -11,7 +11,6 @@ define([
         loadWorkExperiences();
         loadExtracurricularExperiences();
         $(window).scrollTop(sessionStorage.getItem("preRefreshPosition"));
-        initCheckpoints();
     })
 
     $(window).unload(function() {
