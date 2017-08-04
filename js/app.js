@@ -9,6 +9,10 @@ require.config({
     waitSeconds: 30
 })
 
-require(['js/experiences.js', 'js/scroll.js']);
+require([
+    'js/experiences.js',
+    'js/scroll.js',
+    'js/projects.js'
+]);
 
 console.log("Hi there :) If you want to check out the code, go to https://github.com/davidbzhao/Resume")
