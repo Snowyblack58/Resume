@@ -12,7 +12,8 @@ require.config({
 require([
     'js/experiences.js',
     'js/scroll.js',
-    'js/projects.js'
+    'js/projects.js',
+    'js/links.js'
 ]);
 
 console.log("Hi there :) If you want to check out the code, go to https://github.com/davidbzhao/Resume")
