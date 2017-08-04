@@ -4,7 +4,7 @@ define([
 	$(document).ready(function(){
 		initContactIconLinks();
 		initFlyoutLink();
-		backButton();
+		initBackButton();
 	});
 	
 	function initContactIconLinks(){
@@ -22,7 +22,7 @@ define([
 		});
 	}
 
-	function backButton(){
+	function initBackButton(){
 		$('#backButton').click(function(){
 			window.open('http://davidzhao.me/', '_self');
 		})
