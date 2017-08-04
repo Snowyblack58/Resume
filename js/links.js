@@ -4,6 +4,7 @@ define([
 	$(document).ready(function(){
 		initContactIconLinks();
 		initFlyoutLink();
+		backButton();
 	});
 	
 	function initContactIconLinks(){
@@ -17,7 +18,13 @@ define([
 
 	function initFlyoutLink(){
 		$('#toCurrent').click(function(){
-			window.open('http://davidzhao.me/Current/');
+			window.open('http://davidzhao.me/Current/', '_self');
 		});
+	}
+
+	function backButton(){
+		$('#backButton').click(function(){
+			window.open('http://davidzhao.me/', '_self');
+		})
 	}
 })
