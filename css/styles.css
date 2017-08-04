@@ -189,7 +189,7 @@ hr {
 	text-align-last: left;
 }
 .exp-description:last-child {
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 /********** **********
@@ -343,4 +343,25 @@ hr {
 }
 .icon-linkedin {
 	background-image: url(../raw/In-White-128px-TM.png);
+}
+
+/********** **********
+*	 FLYOUT LINK
+*********** **********/
+#toCurrent {
+	position: fixed;
+    bottom: 3rem;
+    right: 0;
+    z-index: 10;
+    padding: 0.5rem 0.75rem;
+    background: #34495e;
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    color: #fff;
+    border-right: none;
+    cursor: pointer;
+}
+#toCurrent:hover {
+	padding-right: 1rem;
+	box-shadow: 0 0 4px #ccc;	
 }

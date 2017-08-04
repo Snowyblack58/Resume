@@ -5,7 +5,8 @@ require.config({
         underscore: 'libs/underscore.min',
         bootstrap: 'libs/bootstrap.min',
         text: 'libs/text'
-    }
+    },
+    waitSeconds: 30
 })
 
 require(['js/experiences.js'])
