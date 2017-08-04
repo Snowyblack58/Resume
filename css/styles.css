@@ -188,6 +188,9 @@ hr {
 	text-align: justify;
 	text-align-last: left;
 }
+.exp-description:last-child {
+	margin-bottom: 2rem;
+}
 
 /********** **********
 * SECTION - ABILITIES

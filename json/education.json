@@ -3,13 +3,13 @@
 	"date": "Aug 2016 - May 2020",
 	"url": "http://engineering.virginia.edu/",
 	"location": "Charlottesville, VA",
-	"subtitle": "B.S. Computer Science",
-	"description": "A rising second year engineering student with interests in machine learning, natural language processing, psychology, and statistics. My classes can be found on my <a href='raw/Transcript_7_20_2017.pdf' download>transcript</a>. My main languages are <span class=\"highlight\">Java, Python, C++, and Javascript</span>."
+	"subtitles": ["B.S. Computer Science"],
+	"descriptions": ["I'm a rising second year engineering student with interests in machine learning, natural language processing, psychology, and statistics. My classes can be found on my <a href='raw/Transcript_7_20_2017.pdf' download>transcript</a>."]
 }, {
 	"name": "Thomas Jefferson High School for Science and Technology",
 	"date": "Aug 2012 - Jun 2016",
 	"url": "https://tjhsst.edu",
 	"location": "Alexandria, VA",
-	"subtitle": "Web/Mobile App Development",
-	"description": "Established a strong foundation in object-oriented programming and data structures. Additionally, I took artificial intelligence, Android app dev, and web app dev, with a senior lab track on web/mobile app development."
+	"subtitles": ["Web/Mobile App Development"],
+	"descriptions": ["Established a strong foundation in object-oriented programming and data structures. Additionally, I took artificial intelligence, Android app dev, and web app dev, with a senior lab track on web/mobile app development."]
 }]

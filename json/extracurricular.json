@@ -3,34 +3,42 @@
 	"date": "Mar 2014 - Present",
 	"url": "",
 	"location": "VA | MD | NJ",
-	"subtitle": "Organizer, Treasurer, Mentor, Participant",
-	"description": "Current treasurer of the executive board for Hack.UVA, on which I handle finances, contact potential sponsors, and organize caterers. I have participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. I have mentored 2 middle school hackathons — FirstHack 2016 and HackCL 2016 — leading an App Inventor workshop in HackCL."
+	"subtitles": ["Organizer/Treasurer",
+				  "Mentor",
+				  "Participant"],
+	"descriptions": ["Currently, I am the treasurer of Hack.UVA, handling our finances and account. I was an organizer for Hack.UVA Spring 2017. Along with shared tasks such as contacting sponsors, I lined up caterers for the event. This is among the coolest experiences I've had.",
+					 "I've mentored at two middle school hackathons — leading an App Inventor workshop in HackCL 2016 and working with a group of 3 at FirstHack 2016.",
+					 "So far, I've participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. I enjoy hackathons the most for learning about new technologies (e.g. Esri, NodeJS) and listening to some of the incredible ideas other hackers come up with. Plus, I can't remember the last time I bought a T-shirt."]
 }, {
-	"name": "Natural Language Processing Seminar/Research",
+	"name": "Natural Language Processing Research Group",
 	"date": "Feb 2017 - Present",
 	"url": "",
 	"location": "Charlottesville, VA",
-	"subtitle": "Student",
-	"description": "Exploring natural language processing and deep learning with other students, ranging from undergrad to PhD. Being a part of this research group entails weekly meetings for delving into new papers and technologies. On my own, I have been listening to online machine learning and natural language processing lectures (Coursera and Stanford) and have been programming small projects along the way."
+	"subtitles": ["Student"],
+	"descriptions": ["Under Professor Kai Wei Chang, I am delving into natural language processing and deep learning with other students, ranging from undergrad to PhD. Being a part of this research group entails weekly meetings for delving into new papers and technologies. On my own, I have been listening to online machine learning and natural language processing lectures (Coursera and Stanford) and have been programming small projects along the way. There are some fascinating problems and applications in this field from what I've learned so far; I've still got a lot I want to explore."]
 }, {
 	"name": "Music Program",
 	"date": "Oct 2007 - Present",
 	"url": "",
 	"location": "MD | TX | VA",
-	"subtitle": "Chief Technology Officer | Principal Trumpet",
-	"description": "Elected Chief Technology Officer of Cavalier Symphony Orchestra (CSO), for which I am developing a <a href=\"https://github.com/davidbzhao/CSO\">website</a>. As well, I play trumpet in CSO and in the First Year Players pit orchestra. I have played trumpet for ten years now."
+	"subtitles": ["Chief Technology Officer",
+				  "Trumpet Player"],
+	"descriptions": ["I was elected Chief Technology Officer of Cavalier Symphony Orchestra (CSO), for which I am developing a <a href=\"https://github.com/davidbzhao/CSO\">website</a>. Even in its germinal stages, the website has already successfully garnered interest and provide an easy avenue for registration in the orchestra.",
+					 "This will be my eleveth year playing trumpet and my second year playing in CSO and in the First Year Players pit orchestra at UVA."]
 }, {
 	"name": "Rubik's Cube Club",
 	"date": "Sep 2013 - Jun 2016",
 	"url": "https://github.com/davidbzhao/TJCubing",
 	"location": "Alexandria, VA",
-	"subtitle": "Co-President/Team Member",
-	"description": "Elected co-president as four-year member of the club. I recruited members, developed the website, and maintained the mailing list. Additionally, I participated on the competitive team that solved 25 cubes in national record time."
+	"subtitles": ["Co-President",
+				  "Team Member"],
+	"descriptions": ["I was elected co-president as four-year member of my high school's Rubik's Cube club. My responsibilities included recruiting members, developing the <a href=\"https://github.com/davidzhao/TJCubing\">website</a>, and maintaining the mailing list.",
+					 "On a fun note, I participated on the competitive team that solved 25 cubes in national record time."]
 }, {
 	"name": "STEMBassadors",
 	"date": "Feb 2013 - Jun 2016",
 	"url": "https://tjpartnershipfund.org/outreach/stembassadors/",
 	"location": "Alexandria, VA",
-	"subtitle": "Math Tutor",
-	"description": "Tutored math for Holmes Middle School sixth grade students considered at risk of failing the state mandated math exam."
+	"subtitles": ["Math Tutor"],
+	"descriptions": ["Through my high school outreach program, I tutored math for Holmes Middle School sixth grade students considered at risk of failing the state mandated math exam."]
 }]

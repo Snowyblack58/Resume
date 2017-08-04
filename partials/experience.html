@@ -7,7 +7,9 @@
         <p class="exp-location"><%= location %></p>
     </div>
     <div class="col-sm-6">
-        <p class="exp-subtitle"><%= subtitle %></p>
-        <p class="exp-description"><%= description %></p>
+        <% for(var cnt = 0; cnt < subtitles.length; cnt++){ %>
+        <p class="exp-subtitle"><%= subtitles[cnt] %></p>
+        <p class="exp-description"><%= descriptions[cnt] %></p>
+        <% } %>
     </div>
 </div>
