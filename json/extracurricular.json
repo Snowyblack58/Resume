@@ -1,21 +1,20 @@
 [{
-	"name": "Hackathons",
+	"name": "Hack.UVA + Hackathons",
 	"date": "Mar 2014 - Present",
 	"url": "",
 	"location": "VA | MD | NJ",
 	"subtitles": ["Organizer/Treasurer",
-				  "Mentor",
-				  "Participant"],
-	"descriptions": ["Currently, I am the treasurer of Hack.UVA, handling our finances and account. I was an organizer for Hack.UVA Spring 2017. Along with shared tasks such as contacting sponsors, I lined up caterers for the event. This is among the coolest experiences I've had.",
-					 "I've mentored at two middle school hackathons — leading an App Inventor workshop in HackCL 2016 and working with a group of 3 at FirstHack 2016.",
-					 "So far, I've participated in 8 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, and MHacks Nano 2017. I enjoy hackathons the most for learning about new technologies (e.g. Esri, NodeJS) and listening to some of the incredible ideas other hackers come up with. Plus, I can't remember the last time I bought a T-shirt."]
+				  "Mentor"],
+	"descriptions": ["Currently, I am the treasurer of Hack.UVA, handling our finances and account. I was an organizer for Hack.UVA Spring 2017, lining up all caterers and contacted 65+ sponsors.",
+					"So far, I've participated in 9 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016, Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, MHacks Nano 2017, and RamHacks 2017. I placed first in two category prizes at RamHacks 2017 and second in a third.",
+					 "I've mentored at two middle school hackathons — leading an App Inventor workshop in HackCL 2016 and working with a group of 3 at FirstHack 2016."]
 }, {
 	"name": "Natural Language Processing Research Group",
-	"date": "Feb 2017 - Present",
+	"date": "Feb 2017 - May 2017",
 	"url": "",
 	"location": "Charlottesville, VA",
 	"subtitles": ["Student"],
-	"descriptions": ["Under Professor Kai Wei Chang, I am delving into natural language processing and deep learning with other students, ranging from undergrad to PhD. Being a part of this research group entails weekly meetings for delving into new papers and technologies. On my own, I have been listening to online machine learning and natural language processing lectures (Coursera and Stanford) and have been programming small projects along the way. There are some fascinating problems and applications in this field from what I've learned so far; I've still got a lot I want to explore."]
+	"descriptions": ["Under Professor Kai Wei Chang, I dived into natural language processing and deep learning with other students, ranging from undergrad to PhD. Being a part of this research group entailed weekly meetings for delving into new papers and technologies. On my own, I have been listening to online machine learning and natural language processing lectures (Coursera and Stanford) and have been programming small projects along the way. There are some fascinating problems and applications in this field from what I've learned so far; I've still got a lot I want to explore."]
 }, {
 	"name": "Music Program",
 	"date": "Oct 2007 - Present",
