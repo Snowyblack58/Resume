@@ -1,6 +1,13 @@
 [{
+	"name": "Octo Consulting Group",
+	"date": "Nov 2017 - Present",
+	"url": "https://octoconsulting.com/",
+	"location": "Reston, VA",
+	"subtitles": ["Associate Consultant/Intern"],
+	"descriptions": ["Continuing work on FaqToBot project initially developed at RamHacks."]
+}, {
 	"name": "Innovative Defense Technologies",
-	"date": "May 2017 - Present",
+	"date": "May 2017 - Aug 2017",
 	"url": "https://idtus.com/",
 	"location": "Arlington, VA",
 	"subtitles": ["Software Engineering Intern"],
