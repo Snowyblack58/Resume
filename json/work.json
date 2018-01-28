@@ -1,10 +1,18 @@
 [{
+	"name": "Palantir Technologies",
+	"date": "Summer 2018",
+	"url": "https://www.palantir.com/",
+	"location": "",
+	"subtitles": ["Forward Deployed Software Engineer Intern"],
+	"descriptions": [""]
+},
+{
 	"name": "Octo Consulting Group",
 	"date": "Nov 2017 - Present",
 	"url": "https://octoconsulting.com/",
 	"location": "Reston, VA",
 	"subtitles": ["Associate Consultant/Intern"],
-	"descriptions": ["Continuing work on FaqToBot project initially developed at RamHacks."]
+	"descriptions": ["Develop a pipeline to automatically generate publishable chat bots based on content like FAQs, primarily using Python and AWS."]
 }, {
 	"name": "Innovative Defense Technologies",
 	"date": "May 2017 - Aug 2017",
