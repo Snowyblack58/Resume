@@ -1,561 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Resume | David Zhao</title>
 
-		<link rel="icon" href="raw/favicon.ico">
-		<!-- Bootstrap -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-		<!--<link href="normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">-->
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lora|Raleway|Roboto" rel="stylesheet">
-	</head>
-	<body>
-		<div id="backButton"><span class="glyphicon glyphicon-menu-left"></span></div>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div id="cube" class="navbar-brand">
-						<svg style="width: 36px; height: 36px">
-							<path class="new-face" id="newface1"></path>
-							<path class="new-face" id="newface2"></path>
-							<path class="new-face" id="newface3"></path>
-							<path class="new-face" id="newface4"></path>
-							<path class="new-face" id="newface5"></path>
-							<path class="new-face" id="newface6"></path>
-							<path class="new-face" id="newface7"></path>
-							<path class="new-face" id="newface8"></path>
-							<path class="new-face" id="newface9"></path>
-							<path class="current-face" id="currentface1"></path>
-							<path class="current-face" id="currentface2"></path>
-							<path class="current-face" id="currentface3"></path>
-							<path class="current-face" id="currentface4"></path>
-							<path class="current-face" id="currentface5"></path>
-							<path class="current-face" id="currentface6"></path>
-							<path class="current-face" id="currentface7"></path>
-							<path class="current-face" id="currentface8"></path>
-							<path class="current-face" id="currentface9"></path>
-						</svg>
-					</div>
-					<a class="navbar-brand" href="#">david zhao</a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul id="navbar-options" class="nav navbar-nav">
-						<li><a href="#profile">profile</a></li>
-						<li><a href="#experiences">experiences</a></li>
-						<li><a href="#abilities">abilities</a></li>
-						<li><a href="#projects">projects</a></li>
-					</ul>
-					<ul id="navbar-contact" class="nav navbar-nav navbar-right">
-						<li><a><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> dz6hu@virginia.edu</a></li>
-						<li><a><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (281)961-7541</a></li>	
-					</ul>
-				</div>
-			</div>
-		</nav>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Resume | David Zhao</title>
 
-		<div id="toCurrent">Check out what I'm up to</div>
-		
-		<div id="name" title="I took this picture somewhere in Maine. I like cats. :)">
-			<h1>DAVID ZHAO</h1>
-		</div>
-		<div id="profile" class="info-section">
-			<div class="container">
-			<h2 class="section-title">Profile</h2>
-				<div class="row">
-					<div id="left-profile" class="col-md-3 col-sm-12">
-						<h3>Name</h3>
-						<p>David Zhao</p>
-						<h3>School</h3>
-						<p>University of Virginia</p>
-						<h3>Location</h3>
-						<p>Charlottesville, VA</p>
-						<h3></h3>
-					</div>
-					<div id="mid-profile" class="col-md-6">
-						<img id="profile-pic" src="raw/cleanpfp.jpg" class="img-circle img-responsive">
-					</div>
-					<div id="right-profile" class="col-md-3">
-						<h3>About Me</h3>
-						<p>I'm a computer science nerd at heart. I'm here to learn. I'm here to make things better.</p>
-						<h3>Languages</h3>
-						<p>English, Java, Python, C++, Javascript, and a touch of Spanish</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div id="experiences" class="info-section">
-			<div class="container">
-			<h2 class="section-title">Experiences</h2>
-				<h3>Education</h3>
-				<div id="education"></div>
-				<br>
-				<h3>Work</h3>
-				<div id="work"></div>
-				<br>
-				<h3>Extracurriculars</h3>
-				<div id="extracurricular"></div>
-			</div>
-		</div>
-		<hr>
-		<div id="abilities" class="info-section">
-			<div class="container">
-				<h2 class="section-title">Abilities</h2>
-				<div class="row">
-					<div class="col-md-4">
-						<h3>Languages</h3>
-						<table class="table">
-							<tbody>
-								<tr>
-									<td class="ability-table-left">Javascript (7yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Java (4yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Python (3yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">C++ (1yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">HTML/CSS (7yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">SQL (<1yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Typescript (<1yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">PHP (<1yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">C# (1yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">JQuery (6yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Bootstrap (3yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Node.JS (<1yr)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-md-4">
-						<h3>Software</h3>
-						<table class="table">
-							<tbody>
-								<tr>
-									<td class="ability-table-left">Git</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Linux</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Powershell</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Android Studio</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">AWS</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">GIMP</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Blender</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Unity</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-md-4">
-						<h3>Skills</h3>
-						<table class="table">
-							<tbody>
-								<tr>
-									<td class="ability-table-left">Object Oriented Programming</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Machine Learning (I'm learning!)</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Front End Web Programming</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Android App Programming</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Android App Material Design</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="ability-table-left">Web App Design</td>
-									<td class="ability-table-right">
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-										<span class="glyphicon glyphicon-star glyphicon-gray"></span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div id="projects" class="info-section">
-			<div class="container">
-				<h2 class="section-title">Projects</h2>
-				<div class="row col-md-8 col-md-offset-2">
-					<div id="project-scout" class="project col-sm-4 col-xs-6" data-href="http://devpost.com/software/scope-y9ag54">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="https://camo.githubusercontent.com/3722d88f5251b51aa547dd759e8a2cabc222b387/68747470733a2f2f696d6775722e636f6d2f665250384d4a522e706e67">
-							</div>
-							<p class="project-title">Scout</p>
-							<p class="project-description">Comp. Vision Video Search</p>
-							<p class="project-tags">AWS, Py, Web</p>
-						</div>
-					</div>
-					<div id="project-faqtobot" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/FaqToBot">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="https://firefly-challengepost.netdna-ssl.com/usercontent/fill/333/222/cGhvdG9zL3Byb2R1Y3Rpb24vc29mdHdhcmVfdGh1bWJuYWlsX3Bob3Rvcy8wMDAvNTM3LzI5NC9kYXRhcy9vcmlnaW5hbC5wbmc=/Faqtobot1.0.png?signature=534eea19b4de96495908a3afd090dbfdaadaf7f3">
-							</div>
-							<p class="project-title">FaqToBot</p>
-							<p class="project-description">Generate FAQ Bots</p>
-							<p class="project-tags">RamHacks Winner</p>
-						</div>
-					</div>
-					<div id="project-basicrnn" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/BasicRNN">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/basicrnn.png">
-							</div>
-							<p class="project-title">BasicRNN</p>
-							<p class="project-description">Trained an RNN with the Bible</p>
-							<p class="project-tags"></p>
-						</div>
-					</div>
-					<div id="project-current" class="project col-sm-4 col-xs-6" data-href="http://davidzhao.me/Current/">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/current.png">
-							</div>
-							<p class="project-title">Current</p>
-							<p class="project-description">My personal programming journal/log</p>
-							<p class="project-tags"></p>
-						</div>
-					</div>
-					<div id="project-gonad" class="project col-sm-4 col-xs-6" data-href="https://docs.google.com/spreadsheets/d/1eodouvW5og_1Cx7edDbODiB06yO4zs8mqVRoF-y54FQ/edit?usp=sharing">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/gonad.png">
-							</div>
-							<p class="project-title">Neural Network.GS</p>
-							<p class="project-description">A neural net in Google Sheets</p>
-							<p class="project-tags"></p>
-						</div>
-					</div>
-					<div id="project-cso" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/CSO">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/cso-logo.png">
-							</div>
-							<p class="project-title">CSO Website</p>
-							<p class="project-description">Website for Club @ UVA</p>
-							<p class="project-tags">Bootstrap, js, php, html, css</p>
-						</div>
-					</div>
-					<div id="project-anacostiaparkapp" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/Anacostia-Park-App">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/anacostiaparkapp.png">
-							</div>
-							<p class="project-title">Anacostia Park App</p>
-							<p class="project-description">Audio Tour Android App</p>
-							<p class="project-tags">Java, XML, android</p>
-						</div>
-					</div>
-					<div id="project-botjs2" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/botjs2">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/messenger-logo.png">
-							</div>
-							<p class="project-title">FB Messenger Bot</p>
-							<p class="project-description">Messenger bot framework</p>
-							<p class="project-tags">node.js, js, html, css</p>
-						</div>
-					</div>
-					<div id="project-endquote" class="project col-sm-4 col-xs-6" data-href="https://devpost.com/software/endquote">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/endquote.png">
-							</div>
-							<p class="project-title">Endquote</p>
-							<p class="project-description">Autocomplete for quotes in GDocs</p>
-							<p class="project-tags">js, gs, html, css</p>
-						</div>
-					</div>
-					<div id="project-cubing" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/TJCubing">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/cubing.png">
-								</div>
-							<p class="project-title">TJ Cubing Website</p>
-							<p class="project-description">Website for Club @ TJHSST</p>
-							<p class="project-tags">Bootstrap, js, php, html, css</p>
-						</div>
-					</div>
-					<div id="project-binger" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/Binger">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/binger.svg">
-							</div>
-							<p class="project-title">Binger</p>
-							<p class="project-description">Tinder for movies</p>
-							<p class="project-tags">Firebase, js, html, css</p>
-						</div>
-					</div>
-					<div id="project-cookiecoder" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/CookieCoder">
-						<div class="project-card">
-							<div class="project-image">
-								<img src="raw/cookiecoder.gif">
-							</div>
-							<p class="project-title">Cookie Coder</p>
-							<p class="project-description">Cookie Clicker CLI</p>
-							<p class="project-tags">js, html, css</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="contact" class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<ul id="contact-info" class="contact">
-							<li class="contact-info-email"><span class="glyphicon glyphicon-envelope
+	<link rel="icon" href="raw/favicon.ico">
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">-->
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Raleway|Roboto" rel="stylesheet">
+</head>
+
+<body>
+	<div id="toCurrent">Check out what I'm up to</div>
+<div id="backButton">
+    <span class="glyphicon glyphicon-menu-left"></span>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="cube" class="navbar-brand">
+                <svg style="width: 36px; height: 36px">
+                    <path class="new-face" id="newface1"></path>
+                    <path class="new-face" id="newface2"></path>
+                    <path class="new-face" id="newface3"></path>
+                    <path class="new-face" id="newface4"></path>
+                    <path class="new-face" id="newface5"></path>
+                    <path class="new-face" id="newface6"></path>
+                    <path class="new-face" id="newface7"></path>
+                    <path class="new-face" id="newface8"></path>
+                    <path class="new-face" id="newface9"></path>
+                    <path class="current-face" id="currentface1"></path>
+                    <path class="current-face" id="currentface2"></path>
+                    <path class="current-face" id="currentface3"></path>
+                    <path class="current-face" id="currentface4"></path>
+                    <path class="current-face" id="currentface5"></path>
+                    <path class="current-face" id="currentface6"></path>
+                    <path class="current-face" id="currentface7"></path>
+                    <path class="current-face" id="currentface8"></path>
+                    <path class="current-face" id="currentface9"></path>
+                </svg>
+            </div>
+            <a class="navbar-brand" href="#">david zhao</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul id="navbar-options" class="nav navbar-nav">
+                <li>
+                    <a href="#profile">profile</a>
+                </li>
+                <li>
+                    <a href="#experiences">experiences</a>
+                </li>
+                <li>
+                    <a href="#abilities">abilities</a>
+                </li>
+                <li>
+                    <a href="#projects">projects</a>
+                </li>
+            </ul>
+            <ul id="navbar-contact" class="nav navbar-nav navbar-right">
+                <li>
+                    <a>
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> dz6hu@virginia.edu</a>
+                </li>
+                <li>
+                    <a>
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (281)961-7541</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	<!--include _navbar.html-->
+	<div id="name" title="I took this picture somewhere in Maine. I like cats. :)">
+		<h1>DAVID ZHAO</h1>
+	</div>
+<div id="profile" class="info-section">
+    <div class="container">
+        <h2 class="section-title">Profile</h2>
+        <div class="row">
+            <div id="left-profile" class="col-md-3 col-sm-12">
+                <h3>Name</h3>
+                <p>David Zhao</p>
+                <h3>School</h3>
+                <p>University of Virginia</p>
+                <h3>Location</h3>
+                <p>Charlottesville, VA</p>
+                <h3></h3>
+            </div>
+            <div id="mid-profile" class="col-md-6">
+                <img id="profile-pic" src="raw/cleanpfp.jpg" class="img-circle img-responsive">
+            </div>
+            <div id="right-profile" class="col-md-3">
+                <h3>About Me</h3>
+                <p>I'm a computer science nerd at heart. I'm here to learn. I'm here to make things better.</p>
+                <h3>Languages</h3>
+                <p>English, Java, Python, C++, Javascript, and a touch of Spanish</p>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--include _about.html-->
+	<hr>
+<div id="experiences" class="info-section">
+    <div class="container">
+        <h2 class="section-title">Experiences</h2>
+        <h3>Education</h3>
+        <div id="education">
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">University of Virginia</p>
+                    <p class="exp-date">Aug 2016 - May 2020</p>
+                    <a href="http://engineering.virginia.edu/" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Charlottesville, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">B.S. Computer Science</p>
+                    <p class="exp-description">I'm a second year engineering student with interests in machine learning, natural language processing,
+                        psychology, and statistics. My classes can be found on my
+                        <a href="raw/2018-01-28_transcript.pdf"
+                            download="">transcript</a>.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Thomas Jefferson High School for Science and Technology</p>
+                    <p class="exp-date">Aug 2012 - Jun 2016</p>
+                    <a href="https://tjhsst.edu" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Alexandria, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Web/Mobile App Development</p>
+                    <p class="exp-description">Established a strong foundation in object-oriented programming and data structures. Additionally, I took
+                        artificial intelligence, Android app dev, and web app dev, with a senior lab track on web/mobile
+                        app development.</p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3>Work</h3>
+        <div id="work">
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Palantir Technologies</p>
+                    <p class="exp-date">Summer 2018</p>
+                    <a href="https://www.palantir.com/" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location"></p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Forward Deployed Software Engineer Intern</p>
+                    <p class="exp-description"></p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Octo Consulting Group</p>
+                    <p class="exp-date">Nov 2017 - Present</p>
+                    <a href="https://octoconsulting.com/" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Reston, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Associate Consultant/Intern</p>
+                    <p class="exp-description">Develop a pipeline to automatically generate publishable chat bots based on content like FAQs, primarily
+                        using Python and AWS.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Innovative Defense Technologies</p>
+                    <p class="exp-date">May 2017 - Aug 2017</p>
+                    <a href="https://idtus.com/" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Arlington, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Software Engineering Intern</p>
+                    <p class="exp-description">Besides working on various bug fixes and feature implementations, my main work was in inserting a chat
+                        tool into a web application on a stack of
+                        <span class="highlight">PostGreSQL, C++, Java, Python, Typescript, and HTML/CSS</span>. The great success of this internship
+                        was in my exposure to different libraries (Backbone, Underscore, dhtmlx, Foundation) and to an industry
+                        programming workflow (projects with dozens of people). In contrast to my previous internship experience,
+                        this internship was fast-paced and filled to the brim with learning opportunities.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">USACE Geospatial Research Labratory</p>
+                    <p class="exp-date">Jun 2015 - Aug 2015</p>
+                    <a href="http://www.erdc.usace.army.mil/Locations/GRL.aspx" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Alexandria, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Research Scientist Intern</p>
+                    <p class="exp-description">Under a computer scientist mentor, I researched a spatial index called the pivot index. I spent a few
+                        days reading papers on the pivot index, followed by developing different
+                        <span class="highlight">Python</span> optimizations to reduce K nearest neighbor computational costs. The chance to delve
+                        into a complicated (or at least it seemed that way to my high school self) topic sparked my interest
+                        in research and the plentiful subjects under the realm of computer science.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">TJ MSTI App Development Camp</p>
+                    <p class="exp-date">Jun 2014 - Aug 2014</p>
+                    <a href="http://tjpartnershipfund.org/tjpartnershipfund/outreach/middle-schl-tech-institute/" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Fairfax, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Teaching Assistant</p>
+                    <p class="exp-description">I taught four 1-week summer camp sessions, introducing middle school students to drag-and-drop mobile
+                        app development. I led workshops and worked one-on-one with students. I daresay my ability to communicate
+                        improved after this camp.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Independent</p>
+                    <p class="exp-date">Spring 2014 - Spring 2016</p>
+                    <a href="" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Alexandria, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Math Tutor</p>
+                    <p class="exp-description">Independent of any program, I tutored two students weekly in math topics, ranging from Pre-Algebra up
+                        to Pre-Calculus. A proud moment was when one of my students pushed her grade from near failing to
+                        an A.</p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3>Extracurriculars</h3>
+        <div id="extracurricular">
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Hack.UVA + Hackathons</p>
+                    <p class="exp-date">Mar 2014 - Present</p>
+                    <a href="" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">VA | MD | NJ</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Organizer/Treasurer</p>
+                    <p class="exp-description">Currently, I am the treasurer of Hack.UVA, handling our finances and account. I was an organizer for
+                        Hack.UVA Spring 2017, lining up all caterers and contacted 65+ sponsors.</p>
+
+                    <p class="exp-subtitle">Participant</p>
+                    <p class="exp-description">So far, I've participated in 10 hackathons — PilotDC 2014, PilotDC 2015, HackTJ 2015, HackUMBC 2016,
+                        Bitcamp 2016, MLH Prime Spring 2016, YHacks 2016, MHacks Nano 2017, RamHacks 2017, and HoyaHacks
+                        2018. I placed first in two category prizes at RamHacks 2017 and second in a third.</p>
+
+                    <p class="exp-subtitle">Mentor</p>
+                    <p class="exp-description">I've mentored at two middle school hackathons — leading an App Inventor workshop in HackCL 2016 and working
+                        with a group of 3 at FirstHack 2016.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Natural Language Processing Research Group</p>
+                    <p class="exp-date">Feb 2017 - May 2017</p>
+                    <a href="" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Charlottesville, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Student</p>
+                    <p class="exp-description">Under Professor Kai Wei Chang, I dived into natural language processing and deep learning with other
+                        students, ranging from undergrad to PhD. Being a part of this research group entailed weekly meetings
+                        for delving into new papers and technologies. On my own, I have been listening to online machine
+                        learning and natural language processing lectures (Coursera and Stanford) and have been programming
+                        small projects along the way. There are some fascinating problems and applications in this field
+                        from what I've learned so far; I've still got a lot I want to explore.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Music Program</p>
+                    <p class="exp-date">Oct 2007 - Present</p>
+                    <a href="" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">MD | TX | VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Chief Technology Officer</p>
+                    <p class="exp-description">I was elected Chief Technology Officer of Cavalier Symphony Orchestra (CSO), for which I am developing
+                        a
+                        <a href="https://github.com/davidbzhao/CSO">website</a>. Even in its germinal stages, the website has already successfully garnered interest
+                        and provide an easy avenue for registration in the orchestra.</p>
+
+                    <p class="exp-subtitle">Trumpet Player</p>
+                    <p class="exp-description">This will be my eleveth year playing trumpet and my second year playing in CSO and in the First Year
+                        Players pit orchestra at UVA.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">Rubik's Cube Club</p>
+                    <p class="exp-date">Sep 2013 - Jun 2016</p>
+                    <a href="https://github.com/davidbzhao/TJCubing" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Alexandria, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Co-President</p>
+                    <p class="exp-description">I was elected co-president as four-year member of my high school's Rubik's Cube club. My responsibilities
+                        included recruiting members, developing the
+                        <a href="https://github.com/davidzhao/TJCubing">website</a>, and maintaining the mailing list.</p>
+
+                    <p class="exp-subtitle">Team Member</p>
+                    <p class="exp-description">On a fun note, I participated on the competitive team that solved 25 cubes in national record time.</p>
+
+                </div>
+            </div>
+            <div class="experience row">
+                <div class="col-sm-6">
+                    <p class="exp-name">STEMBassadors</p>
+                    <p class="exp-date">Feb 2013 - Jun 2016</p>
+                    <a href="https://tjpartnershipfund.org/outreach/stembassadors/" target="_blank" class="exp-link">Link</a>
+                    ●
+                    <p class="exp-location">Alexandria, VA</p>
+                </div>
+                <div class="col-sm-6">
+
+                    <p class="exp-subtitle">Math Tutor</p>
+                    <p class="exp-description">Through my high school outreach program, I tutored math for Holmes Middle School sixth grade students
+                        considered at risk of failing the state mandated math exam.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--include _experiences.html-->
+	<hr>
+<div id="abilities" class="info-section">
+    <div class="container">
+        <h2 class="section-title">Abilities</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Languages</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="ability-table-left">Javascript (7yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Java (4yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Python (3yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">C++ (1yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">HTML/CSS (7yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">SQL (
+                                <1yr)</td>
+                                    <td class="ability-table-right">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                    </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Typescript (
+                                <1yr)</td>
+                                    <td class="ability-table-right">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                    </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">PHP (
+                                <1yr)</td>
+                                    <td class="ability-table-right">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                    </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">C# (1yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">JQuery (6yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Bootstrap (3yr)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Node.JS (
+                                <1yr)</td>
+                                    <td class="ability-table-right">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                        <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                    </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h3>Software</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="ability-table-left">Git</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Linux</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Powershell</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Android Studio</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">AWS</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">GIMP</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Blender</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Unity</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h3>Skills</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="ability-table-left">Object Oriented Programming</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Machine Learning (I'm learning!)</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Front End Web Programming</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Android App Programming</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Android App Material Design</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ability-table-left">Web App Design</td>
+                            <td class="ability-table-right">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                                <span class="glyphicon glyphicon-star glyphicon-gray"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--include _abilities.html-->
+	<hr>
+<div id="projects" class="info-section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="row col-md-8 col-md-offset-2">
+            <div id="project-scout" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/Scout">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://camo.githubusercontent.com/3722d88f5251b51aa547dd759e8a2cabc222b387/68747470733a2f2f696d6775722e636f6d2f665250384d4a522e706e67">
+                    </div>
+                    <p class="project-title">Scout</p>
+                    <p class="project-description">Comp. Vision Video Search</p>
+                    <p class="project-tags">AWS, Py, Web</p>
+                </div>
+            </div>
+            <div id="project-faqtobot" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/FaqToBot">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://firefly-challengepost.netdna-ssl.com/usercontent/fill/333/222/cGhvdG9zL3Byb2R1Y3Rpb24vc29mdHdhcmVfdGh1bWJuYWlsX3Bob3Rvcy8wMDAvNTM3LzI5NC9kYXRhcy9vcmlnaW5hbC5wbmc=/Faqtobot1.0.png?signature=534eea19b4de96495908a3afd090dbfdaadaf7f3">
+                    </div>
+                    <p class="project-title">FaqToBot</p>
+                    <p class="project-description">Generate FAQ Bots</p>
+                    <p class="project-tags">RamHacks Winner</p>
+                </div>
+            </div>
+            <div id="project-basicrnn" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/BasicRNN">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/basicrnn.png">
+                    </div>
+                    <p class="project-title">BasicRNN</p>
+                    <p class="project-description">Trained an RNN with the Bible</p>
+                    <p class="project-tags"></p>
+                </div>
+            </div>
+            <div id="project-current" class="project col-sm-4 col-xs-6" data-href="http://davidzhao.me/Current/">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/current.png">
+                    </div>
+                    <p class="project-title">Current</p>
+                    <p class="project-description">My personal programming journal/log</p>
+                    <p class="project-tags"></p>
+                </div>
+            </div>
+            <div id="project-gonad" class="project col-sm-4 col-xs-6" data-href="https://docs.google.com/spreadsheets/d/1eodouvW5og_1Cx7edDbODiB06yO4zs8mqVRoF-y54FQ/edit?usp=sharing">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/gonad.png">
+                    </div>
+                    <p class="project-title">Neural Network.GS</p>
+                    <p class="project-description">A neural net in Google Sheets</p>
+                    <p class="project-tags"></p>
+                </div>
+            </div>
+            <div id="project-cso" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/CSO">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/cso-logo.png">
+                    </div>
+                    <p class="project-title">CSO Website</p>
+                    <p class="project-description">Website for Club @ UVA</p>
+                    <p class="project-tags">Bootstrap, js, php, html, css</p>
+                </div>
+            </div>
+            <div id="project-anacostiaparkapp" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/Anacostia-Park-App">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/anacostiaparkapp.png">
+                    </div>
+                    <p class="project-title">Anacostia Park App</p>
+                    <p class="project-description">Audio Tour Android App</p>
+                    <p class="project-tags">Java, XML, android</p>
+                </div>
+            </div>
+            <div id="project-botjs2" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/botjs2">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/messenger-logo.png">
+                    </div>
+                    <p class="project-title">FB Messenger Bot</p>
+                    <p class="project-description">Messenger bot framework</p>
+                    <p class="project-tags">node.js, js, html, css</p>
+                </div>
+            </div>
+            <div id="project-endquote" class="project col-sm-4 col-xs-6" data-href="https://devpost.com/software/endquote">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/endquote.png">
+                    </div>
+                    <p class="project-title">Endquote</p>
+                    <p class="project-description">Autocomplete for quotes in GDocs</p>
+                    <p class="project-tags">js, gs, html, css</p>
+                </div>
+            </div>
+            <div id="project-cubing" class="project col-sm-4 col-xs-6" data-href="https://github.com/davidbzhao/TJCubing">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/cubing.png">
+                    </div>
+                    <p class="project-title">TJ Cubing Website</p>
+                    <p class="project-description">Website for Club @ TJHSST</p>
+                    <p class="project-tags">Bootstrap, js, php, html, css</p>
+                </div>
+            </div>
+            <div id="project-binger" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/Binger">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/binger.svg">
+                    </div>
+                    <p class="project-title">Binger</p>
+                    <p class="project-description">Tinder for movies</p>
+                    <p class="project-tags">Firebase, js, html, css</p>
+                </div>
+            </div>
+            <div id="project-cookiecoder" class="project col-sm-4 col-xs-6" data-href="https://github.com/naitian/CookieCoder">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="raw/cookiecoder.gif">
+                    </div>
+                    <p class="project-title">Cookie Coder</p>
+                    <p class="project-description">Cookie Clicker CLI</p>
+                    <p class="project-tags">js, html, css</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--include _projects.html-->
+<div id="contact" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <ul id="contact-info" class="contact">
+                    <li class="contact-info-email">
+                        <span class="glyphicon glyphicon-envelope
 " aria-hidden="true"></span> dz6hu@virginia.edu</li>
-							<li class="contact-info-phone"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (281) 961-7541</li>
-						</ul>
-					</div>
-					<div class="col-sm-4">
-						<div id="resume-download">
-							<a href="raw/DavidZhaoResume.pdf" download>Download Paper Resume</a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<ul id="contact-links" class="contact">
-							<li class="icon icon-github"></li>
-							<li class="icon icon-linkedin"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
-		<script type="text/javascript">
-			if(typeof(_) === 'undefined'){
-				document.write("<script src='js/libs/require.js'><\/script>")
-			}
-		</script>
-		<script type="text/javascript" src="js/app.js"></script>
-	</body>
+                    <li class="contact-info-phone">
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (281) 961-7541</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <div id="resume-download">
+                    <a href="raw/DavidZhaoResume.pdf" download>Download Paper Resume</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <ul id="contact-links" class="contact">
+                    <li class="icon icon-github"></li>
+                    <li class="icon icon-linkedin"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--include _footer.html-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+	<script type="text/javascript">
+		if (typeof (_) === 'undefined') {
+			document.write("<script src='js/libs/require.js'><\/script>")
+		}
+	</script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>
