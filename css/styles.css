@@ -15,13 +15,13 @@ h2 {
 	font-size: 2.5rem;
 	text-transform: lowercase;
 	text-align: center;
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', serif;
 }
 h3 {
 	font-size: 24px;
 	font-size: 1.5rem;
 	text-transform: lowercase;
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', serif;
 }
 hr {
 	width: 35%;
@@ -161,58 +161,56 @@ hr {
 /********** **********
 *SECTION - EXPERIENCES
 *********** **********/
-#experiences .section-title,
-#experiences a,
-#experiences .highlight {
-	color: #e74c3c;
-}
-#experiences .highlight {
-	font-style: italic;
-}
-#experiences h3 {
-	text-align: left;
-	margin-bottom: 32px;
-	margin-bottom: 2rem;
-}
 .experience {
-	display: block;
-	text-align: left;
-	padding-left: 0;
-}
-.experience>div:last-child {
-	padding-left: 32px;
-	padding-left: 2rem;
-}
-@media only screen and (min-width : 768px) {
-	.experience {
-		padding-left: 16px;
-		padding-left: 1rem;
-	}
-	.experience>div:last-child {
-		padding-left: 0;
-	}
-}
-
-.exp-name,
-.exp-subtitle {
-	font-weight: 600;
-	margin-bottom: 0;
+	background: aliceblue;
+	box-shadow: 0 0 2px #000;
 	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: 8rem 1fr;
+}
+.experience:hover {
+	background: rgb(184, 235, 255);
+	/* box-shadow: 0 0 16px #000; */
+}
+.exp-icon {
+	padding: 2rem;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-rows: 1fr;
+	align-items: center;
+}
+.exp-icon img {
+	width: 100%;
+}
+.exp-content-container {
+	background: #fff;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	padding: 2rem;
+}
+.exp-header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+}
+.exp-title {
+	font-weight: 700;
+	font-size: 1.125rem;
 	letter-spacing: 0.5px;
+	margin: 0;
+}
+.exp-subtitle {
+	opacity: 0.54;
 }
 .exp-date {
-	margin-bottom: 0;
+	text-align: right;
+	margin: 0;
 }
-.exp-link,
-.exp-location {
-	display: inline;
+.exp-main {
+	text-align: left;
 }
 .exp-description {
-	text-align: justify;
-	text-align-last: left;
-}
-.exp-description:last-child {
-	margin-bottom: 3rem;
+	margin: 0;
 }
 
 /********** **********
