@@ -168,9 +168,22 @@ hr {
 	display: grid;
 	grid-template-columns: 8rem 1fr;
 }
+.experience-title {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: flex-start;
+	align-items: center;
+	padding: 1rem;
+}
+.experience-title h3 {
+	margin: 0;
+}
 .experience:hover {
 	background: rgb(184, 235, 255);
 	/* box-shadow: 0 0 16px #000; */
+}
+.experience:hover .exp-content-container {
+	background: #f8f8f8;
 }
 .exp-icon {
 	padding: 2rem;
