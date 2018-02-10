@@ -154,6 +154,11 @@ hr {
 	box-shadow: 0 0 5px;
 	display: inline;
 }
+@media only screen and (max-width : 767px) {
+	#profile-pic {
+		width: 100%;
+	}
+}
 #right-profile {
 	text-align: left;
 }
@@ -168,6 +173,15 @@ hr {
 	display: grid;
 	grid-template-columns: 8rem 1fr;
 }
+.experience:hover {
+	background: rgb(184, 235, 255);
+}
+@media only screen and (max-width : 767px) {
+	.experience {
+		grid-template-columns: none;
+		grid-template-rows: 200px auto;
+	}
+}
 .experience-title {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -178,10 +192,6 @@ hr {
 .experience-title h3 {
 	margin: 0;
 }
-.experience:hover {
-	background: rgb(184, 235, 255);
-	/* box-shadow: 0 0 16px #000; */
-}
 .experience:hover .exp-content-container {
 	background: #f8f8f8;
 }
@@ -191,9 +201,11 @@ hr {
 	display: grid;
 	grid-template-rows: 1fr;
 	align-items: center;
+	justify-items: center;
 }
 .exp-icon img {
-	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .exp-content-container {
 	background: #fff;
@@ -206,11 +218,18 @@ hr {
 	grid-template-columns: auto 1fr;
 	align-items: center;
 }
+@media only screen and (max-width : 767px) {
+	.exp-header {
+		grid-template-columns: none;
+		grid-template-rows: auto auto;
+	}
+}
 .exp-title {
 	font-weight: 700;
 	font-size: 1.125rem;
 	letter-spacing: 0.5px;
 	margin: 0;
+	text-align: left;
 }
 .exp-subtitle {
 	opacity: 0.54;
@@ -218,6 +237,11 @@ hr {
 .exp-date {
 	text-align: right;
 	margin: 0;
+}
+@media only screen and (max-width : 767px) {
+	.exp-date {
+		text-align: left;
+	}
 }
 .exp-main {
 	text-align: left;
@@ -229,29 +253,29 @@ hr {
 /********** **********
 * SECTION - ABILITIES
 *********** **********/
-#abilities .section-title,
-#abilities .glyphicon {
-	color: #2ecc71;
+.ability {
+	background: aliceblue;
+	box-shadow: 0 0 2px #000;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	overflow: auto;
 }
-#abilities tr:hover .glyphicon:not(.glyphicon-gray) {
-	color: #ff69b4;
+.ability:hover {
+	background: rgb(184, 235, 255);
 }
-#abilities p {
-	font-size: 1em;
-	text-align: left;
+.abi-container {
+	display: grid;
+	grid-template-columns: 100px auto auto auto;
 }
-#abilities .glyphicon-gray {
-	color: #ddd;
+.abi-years {
+	background: purple;
 }
-.ability-table-left {
-	text-align: left;
-	width: 50%;
+.abi-projects {
+	background: red;
 }
-.ability-table-right {
-	text-align: right;
-	width: 50%;
+.abi-classes {
+	background: green;
 }
-
 
 /********** **********
 * SECTION - PROJECTS
