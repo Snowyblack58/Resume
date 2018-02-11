@@ -253,28 +253,27 @@ hr {
 /********** **********
 * SECTION - ABILITIES
 *********** **********/
-.ability {
-	background: aliceblue;
-	box-shadow: 0 0 2px #000;
-	font-family: 'Roboto', sans-serif;
-	width: 100%;
-	overflow: auto;
+#abilities .section-title,
+#abilities .glyphicon {
+	color: #2ecc71;
 }
-.ability:hover {
-	background: rgb(184, 235, 255);
+#abilities tr:hover .glyphicon:not(.glyphicon-gray) {
+	color: #ff69b4;
 }
-.abi-container {
-	display: grid;
-	grid-template-columns: 100px auto auto auto;
+#abilities p {
+	font-size: 1em;
+	text-align: left;
 }
-.abi-years {
-	background: purple;
+#abilities .glyphicon-gray {
+	color: #ddd;
 }
-.abi-projects {
-	background: red;
+.ability-table-left {
+	text-align: left;
+	width: 50%;
 }
-.abi-classes {
-	background: green;
+.ability-table-right {
+	text-align: right;
+	width: 50%;
 }
 
 /********** **********
