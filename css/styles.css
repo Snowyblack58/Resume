@@ -155,7 +155,7 @@ hr {
 /********** **********
 *SECTION - EXPERIENCES
 *********** **********/
-.experience {
+.card {
   background: aliceblue;
   border-radius: 0.25rem;
   box-shadow: 0 0 2px #000;
@@ -164,28 +164,19 @@ hr {
   grid-template-columns: 8rem 1fr;
   margin-bottom: 1rem; }
 
-.experience:hover {
+.card:hover {
   background: #b8ebff;
   box-shadow: 0 0 4px; }
 
 @media only screen and (max-width: 767px) {
-  .experience {
+  .card {
     grid-template-columns: none;
     grid-template-rows: 200px auto; } }
-.experience-title {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: flex-start;
-  align-items: center;
-  padding: 1rem; }
 
-.experience-title h3 {
-  margin: 0; }
-
-.experience:hover .exp-content-container {
+.card:hover .card-content-container {
   background: #f8f8f8; }
 
-.exp-icon {
+.card-icon {
   padding: 2rem;
   box-sizing: border-box;
   display: grid;
@@ -193,11 +184,11 @@ hr {
   align-items: center;
   justify-items: center; }
 
-.exp-icon img {
+.card-icon img {
   max-width: 100%;
   max-height: 100%; }
 
-.exp-content-container {
+.card-content-container {
   background: #fff;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -205,36 +196,36 @@ hr {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem; }
 
-.exp-header {
+.card-header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center; }
 
 @media only screen and (max-width: 767px) {
-  .exp-header {
+  .card-header {
     grid-template-columns: none;
     grid-template-rows: auto auto; } }
-.exp-title {
+.card-title {
   font-weight: 700;
   font-size: 1.125rem;
   letter-spacing: 0.5px;
   margin: 0;
   text-align: left; }
 
-.exp-subtitle {
+.card-subtitle {
   opacity: 0.54; }
 
-.exp-date {
+.card-date {
   text-align: right;
   margin: 0; }
 
 @media only screen and (max-width: 767px) {
-  .exp-date {
+  .card-date {
     text-align: left; } }
-.exp-main {
+.card-main {
   text-align: left; }
 
-.exp-description {
+.card-description {
   margin: 0; }
 
 /********** **********
@@ -273,11 +264,11 @@ hr {
   grid-template-columns: 50% 50%;
   grid-column-gap: 1rem; }
 
-#projects .experience {
+#projects .card {
   background: antiquewhite;
 }
 
-#projects .experience:hover {
+#projects .card:hover {
   background: #e67e22;
 }
 
