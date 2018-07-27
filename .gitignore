@@ -108,5 +108,6 @@ env/
 .envrc
 **/__pycache__/
 */__pycache__/
+collected_static/
 
 node_modules/
