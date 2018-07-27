@@ -5,5 +5,13 @@ from django.views import View
 # Create your views here.
 class IndexView(View):
     def get(self, request):
-        context = {}
-        return render(request, 'resume/card.html', context)
+        context = {
+            'sections': [
+                'banner',
+                'intro',
+                'experiences',
+                'skills',
+                'projects',
+            ]
+        }
+        return render(request, 'resume/index.html', context)

@@ -58,6 +58,7 @@ TEMPLATES = [
 		'BACKEND': 'django.template.backends.django.DjangoTemplates',
 		'DIRS': [
 			'templates',
+			'resume/templates/resume',
 		],
 		'APP_DIRS': True,
 		'OPTIONS': {
@@ -70,6 +71,11 @@ TEMPLATES = [
 		},
 	},
 ]
+
+TEMPLATE_LOADERS = (
+	'django.template.loaders.filesystem.Loader',
+	'django.template.loaders.app_directories.Loader',
+)
 
 WSGI_APPLICATION = 'personal.wsgi.application'
 

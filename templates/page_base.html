@@ -1,10 +1,21 @@
 {% load static %}
 {% load pipeline %}
 
-{% block css %}
-{% stylesheet 'main' %}
-{% endblock css %}
-
+<!DOCTYPE html>
 <html>
-    <div>Hi</div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title></title>
+
+        {% stylesheet 'main' %}
+        {% block css %}
+        {% endblock css %}
+    </head>
+    <body>
+        {% block body %}
+        {% endblock body %}
+        {% block js %}
+        {% endblock js %}
+    </body>
 </html>
