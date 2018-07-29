@@ -11,14 +11,17 @@ class Experience(models.Model):
         max_length=1,
         choices=EXPERIENCE_TYPES)
     organization = models.CharField(max_length=75)
-    title = models.CharField(max_length=75)
+    organization_link = models.CharField(max_length=100)
+    logo_url = models.CharField(max_length=200)
+    subtitle = models.CharField(max_length=75)
     location = models.CharField(max_length=75)
     start_date = models.DateField()
     end_date = models.DateField()
     description = models.TextField()
 
     def is_present(self):
-        return (localdate(self.end_date) - localdate()).days >= 0
+        return (self.end_date - localdate()).days >= 0
+
 
     def get_experience_type_readable(self):
         for abbreviation, readable in self.EXPERIENCE_TYPES:

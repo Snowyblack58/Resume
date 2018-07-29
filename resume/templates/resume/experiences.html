@@ -1,0 +1,32 @@
+{% for experience in experiences %}
+<div class="card">
+    <div class="card-icon">
+        <img src="{{ experience.logo_url }}" alt="{{ experience.organization }}">
+    </div>
+    <div class="card-content-container">
+        <div class="card-header">
+            <h4 class="card-title">
+                <a href="{{ experience.organization_link }}" target="_blank">{{ experience.organization }}</a>
+            </h4>
+            <p class="card-date">{{ experience.start_date }} -
+                {% if experience.is_present %} 
+                Present
+                {% else %}
+                {{ experience.end_date }}
+                {% endif %}
+            </p>
+        </div>
+        <div class="card-main">
+            <p class="card-subtitle">{{ experience.subtitle }}</p>
+            <p class="card-description">
+                {% for sentence in experience.description_sentences %}
+                    {% if not forloop.first %}
+                        <br>
+                    {% endif %}
+                    {{ sentence }}
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}

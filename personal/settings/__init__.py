@@ -119,10 +119,11 @@ TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 
+DATE_FORMAT = 'M Y'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
@@ -147,7 +148,7 @@ PIPELINE = {
 			'source_filenames': (
 				'css/_base.scss',
 				'css/_layout.scss',
-				'css/_component.scss',
+				'css/_components.scss',
 			),
 			'output_filename': 'css/main.css',
 		},
