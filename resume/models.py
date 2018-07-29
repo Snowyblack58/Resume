@@ -5,7 +5,7 @@ class Experience(models.Model):
     EXPERIENCE_TYPES = (
         ('e', 'Education'),
         ('w', 'Work'),
-        ('x', 'Extracurricular')
+        ('l', 'Leadership')
     )
     experience_type = models.CharField(
         max_length=1,
@@ -21,7 +21,6 @@ class Experience(models.Model):
 
     def is_present(self):
         return (self.end_date - localdate()).days >= 0
-
 
     def get_experience_type_readable(self):
         for abbreviation, readable in self.EXPERIENCE_TYPES:

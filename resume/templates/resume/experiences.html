@@ -1,32 +1,41 @@
-{% for experience in experiences %}
-<div class="card">
-    <div class="card-icon">
-        <img src="{{ experience.logo_url }}" alt="{{ experience.organization }}">
+{% for exp_type, group in experiences.items %}
+<div class="card-group">
+    <div class="card-group-title">
+        <h3>{{ exp_type }}</h3>
     </div>
-    <div class="card-content-container">
-        <div class="card-header">
-            <h4 class="card-title">
-                <a href="{{ experience.organization_link }}" target="_blank">{{ experience.organization }}</a>
-            </h4>
-            <p class="card-date">{{ experience.start_date }} -
-                {% if experience.is_present %} 
-                Present
-                {% else %}
-                {{ experience.end_date }}
-                {% endif %}
-            </p>
+    <div class="cards">
+        {% for exp in group %}
+        <div class="card">
+            <div class="card-icon">
+                <img src="{{ exp.logo_url }}" alt="{{ exp.organization }}">
+            </div>
+            <div class="card-content-container">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        <a href="{{ exp.organization_link }}" target="_blank">{{ exp.organization }}</a>
+                    </h4>
+                    <p class="card-date">{{ exp.start_date }} -
+                        {% if exp.is_present %} 
+                        Present
+                        {% else %}
+                        {{ exp.end_date }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="card-main">
+                    <p class="card-subtitle">{{ exp.subtitle }}</p>
+                    <p class="card-description">
+                        {% for sentence in exp.description_sentences %}
+                            {% if not forloop.first %}
+                                <br>
+                            {% endif %}
+                            {{ sentence }}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="card-main">
-            <p class="card-subtitle">{{ experience.subtitle }}</p>
-            <p class="card-description">
-                {% for sentence in experience.description_sentences %}
-                    {% if not forloop.first %}
-                        <br>
-                    {% endif %}
-                    {{ sentence }}
-                {% endfor %}
-            </p>
-        </div>
+        {% endfor %}
     </div>
 </div>
 {% endfor %}

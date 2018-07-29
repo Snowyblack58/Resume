@@ -28,6 +28,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: $line-height-default;
+    letter-spacing: 0.25px;
 }
 
 a {
@@ -47,6 +48,37 @@ br {
     margin: 0.5rem;
 }
 
+.card-group {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        grid-template-columns: 12rem 1fr;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-columns: none;
+        grid-template-rows: 8rem 1fr;
+    }
+
+    .card-group-title {
+        display: grid;
+        align-items: start;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            align-items: center;
+        }
+
+        h3 {
+            padding-right: 1rem;
+            margin: 0.5rem 0 0 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
 .card {
     display: grid;
     grid-template-columns: 8rem 1fr;
@@ -54,10 +86,10 @@ br {
 
     background-color: $primary-50;
     border-radius: 0.25rem;
-    border-left: solid 4px transparent;
+    border-left: solid 4px $primary;
     @include box-shadow;
     
-    @media only screen and (max-width: $breakpoint-tablet) {
+    @media only screen and (max-width: $breakpoint-md) {
         grid-template-columns: none;
         grid-template-rows: 8rem auto;
     }
@@ -93,7 +125,7 @@ br {
             grid-template-columns: auto 1fr;
             align-items: center;
 
-            @media only screen and (max-width: $breakpoint-tablet) {
+            @media only screen and (max-width: $breakpoint-md) {
                 grid-template-columns: none;
                 grid-template-rows: auto auto;
             }
@@ -110,7 +142,7 @@ br {
                 text-align: right;
                 margin: 0;
 
-                @media only screen and (max-width: $breakpoint-tablet) {
+                @media only screen and (max-width: $breakpoint-md) {
                     text-align: left;
                 }
             }

@@ -10,14 +10,16 @@ $primary-800: #2a74ad;
 $accent: #e87c47;
 
 // Font
-$font-size: 16px;
+$font-size: 14px;
 $font-stack-title: 'Raleway', sans-serif;
 $font-stack-text: 'Roboto', sans-serif;
 
 $line-height-default: 1.42857143;
 
 // Media queries
-$breakpoint-tablet: 768px;
+$breakpoint-lg: 1006px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 500px;
 
 // Mixins
 @mixin box-shadow {
