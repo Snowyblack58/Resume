@@ -16,6 +16,7 @@ body {
     padding-top: 3.125rem;
     background-color: $off-white;
     box-sizing: border-box;
+    padding: 4rem;
 }
 
 p {
@@ -31,12 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: $anchor-color;
+    color: $primary;
     letter-spacing: 0.5px;
 
     &:hover {
         text-decoration: underline;
-        color: $anchor-color-hover;
+        color: $primary-800;
     }
 }
 
@@ -51,13 +52,19 @@ br {
     grid-template-columns: 8rem 1fr;
     margin-bottom: 1rem;
 
-    background-color: $card-bg-color;
+    background-color: $primary-50;
     border-radius: 0.25rem;
+    border-left: solid 4px transparent;
     @include box-shadow;
     
     @media only screen and (max-width: $breakpoint-tablet) {
         grid-template-columns: none;
         grid-template-rows: 8rem auto;
+    }
+
+    &:hover {
+        border-left: solid 4px $accent;
+        @include box-shadow-heavy;
     }
 
     .card-icon {
@@ -120,15 +127,6 @@ br {
             .card-description {
                 margin: 0;
             }
-        }
-    }
-
-    &:hover {
-        // background-color: $card-bg-color-hover;
-        @include box-shadow-heavy;
-
-        .card-content-container {
-            // background-color: $light-grey;
         }
     }
 }
