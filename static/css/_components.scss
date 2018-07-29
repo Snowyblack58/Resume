@@ -16,7 +16,7 @@ body {
     padding-top: 3.125rem;
     background-color: $off-white;
     box-sizing: border-box;
-    padding: 4rem;
+    padding: 0 4rem;
 }
 
 p {
@@ -75,6 +75,7 @@ br {
             padding-right: 1rem;
             margin: 0.5rem 0 0 0;
             text-transform: uppercase;
+            will-change: padding-top;
         }
     }
 }

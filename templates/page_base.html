@@ -13,10 +13,12 @@
         {% block css %}
         {% endblock css %}
     </head>
-    <body>
+    <body onload="init()">
         {% block body %}
         {% endblock body %}
         {% block js %}
         {% endblock js %}
+
+        <script src="{% static 'js/card.js' %}"></script>
     </body>
 </html>
