@@ -4,13 +4,23 @@ $true-black: #000;
 $off-white: #f8f8f8;
 $light-grey: #e0e0e0;
 
-$primary: #47b2e8;
-$primary-50: #e2f4fc;
-$primary-800: #2a74ad;
-$accent: #e87c47;
+$anchor: #47b2e8;
+$anchor-hover: #2a74ad;
+
+$experience-primary: #47b2e8;
+$experience-50: #e2f4fc;
+$experience-800: #2a74ad;
+
+$project-primary: #ff9800;
+$project-50: #fff3e0;
+$project-800: #ef6c00;
+
+$accent: #e53935;
+
 
 // Font
 $font-size: 14px;
+$font-size-muted: 12px;
 $font-stack-title: 'Raleway', sans-serif;
 $font-stack-text: 'Roboto', sans-serif;
 

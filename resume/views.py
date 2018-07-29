@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
 
-from .models import Experience
+from .models import Experience, Project
 
 # Create your views here.
 class IndexView(View):
@@ -42,6 +42,23 @@ class IndexView(View):
                 'description_sentences': self.tokenize_description(exp.description),
             })
         return grouped_exps
+        
+
+    def get_projects(self):
+        raw_projects = Project.objects.order_by('-end_date')
+        projects = []
+        for project in raw_projects:
+            projects.append({
+                'project_name': project.project_name,
+                'project_link': project.project_link,
+                'logo_url': project.logo_url,
+                'subtitle': project.subtitle,
+                'languages': project.languages,
+                'start_date': project.start_date,
+                'end_date': project.end_date,
+                'description': self.tokenize_description(project.description),
+            })
+        return projects
 
     def get(self, request):
         context = {
@@ -53,5 +70,6 @@ class IndexView(View):
                 'projects',
             ],
             'experiences': self.get_experiences(),
+            'projects': self.get_projects(),
         }
         return render(request, 'resume/index.html', context)

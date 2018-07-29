@@ -33,12 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    color: $primary;
+    color: $anchor;
     letter-spacing: 0.5px;
 
     &:hover {
         text-decoration: underline;
-        color: $primary-800;
+        color: $anchor-hover;
     }
 }
 
@@ -79,14 +79,34 @@ br {
     }
 }
 
+.card-group-experiences {
+    .card {
+        background-color: $experience-50;
+        border-left: solid 4px $experience-primary;
+
+        &:hover {
+            border-left: solid 4px $accent;
+        }
+    }
+}
+
+.card-group-projects {
+    .card {
+        background-color: $project-50;
+        border-left: solid 4px $project-primary;
+
+        &:hover {
+            border-left: solid 4px $accent;
+        }
+    }
+}
+
 .card {
     display: grid;
     grid-template-columns: 8rem 1fr;
     margin-bottom: 1rem;
 
-    background-color: $primary-50;
     border-radius: 0.25rem;
-    border-left: solid 4px $primary;
     @include box-shadow;
     
     @media only screen and (max-width: $breakpoint-md) {
@@ -95,7 +115,6 @@ br {
     }
 
     &:hover {
-        border-left: solid 4px $accent;
         @include box-shadow-heavy;
     }
 
@@ -113,16 +132,16 @@ br {
     }
 
     .card-content-container {
-        background-color: $true-white;
         display: grid;
         grid-template-rows: auto 1fr;
         padding: 2rem;
         border-top-right-radius: 0.25rem;
         border-bottom-right-radius: 0.25rem;
+        background-color: $true-white;
 
         .card-header {
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: 1fr auto;
             align-items: center;
 
             @media only screen and (max-width: $breakpoint-md) {
@@ -150,6 +169,7 @@ br {
 
         .card-main {
             text-align: left;
+            grid-template-rows: auto auto 2rem;
             
             .card-subtitle {
                 opacity: 0.54;
@@ -158,6 +178,11 @@ br {
 
             .card-description {
                 margin: 0;
+            }
+
+            .card-caption {
+                font-size: $font-size-muted;
+                opacity: 0.34;
             }
         }
     }

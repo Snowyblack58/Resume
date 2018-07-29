@@ -1,0 +1,40 @@
+<div class="card-group card-group-projects">
+    <div class="card-group-title">
+        <h3>Projects</h3>
+    </div>
+    <div class="cards">
+        {% for project in projects %}
+        <div class="card">
+            <div class="card-icon">
+                <img src="{{ project.logo_url }}" alt="{{ project.project_name }}">
+            </div>
+            <div class="card-content-container">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        <a href="{{ project.project_link }}" target="_blank">{{ project.project_name }}</a>
+                    </h4>
+                    <p class="card-date">{{ project.start_date }} -
+                        {% if project.is_present %} 
+                        Present
+                        {% else %}
+                        {{ project.end_date }}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="card-main">
+                    <p class="card-subtitle">{{ project.subtitle }}</p>
+                    <p class="card-description">
+                        {% for sentence in project.description_sentences %}
+                            {% if not forloop.first %}
+                                <br>
+                            {% endif %}
+                            {{ sentence }}
+                        {% endfor %}
+                    </p>
+                    <p class="card-caption">{{ project.languages }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
