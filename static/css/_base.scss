@@ -1,23 +1,30 @@
+// Colors
 $true-white: #fff;
 $true-black: #000;
 $off-white: #f8f8f8;
+$light-grey: #e0e0e0;
 
 $card-bg-color: aliceblue;
 $card-bg-color-hover: #b8ebff;
 
+$anchor-color: #337ab7;
+$anchor-color-hover: #235272;
+
+// Font
 $font-size: 16px;
 $font-stack-title: 'Raleway', sans-serif;
 $font-stack-text: 'Roboto', sans-serif;
 
-$anchor-color: #337ab7;
-$anchor-color-hover: #235272;
-
 $line-height-default: 1.42857143;
 
+// Media queries
+$breakpoint-tablet: 768px;
+
+// Mixins
 @mixin box-shadow {
-    box-shadow: 0 2px 3px #e0e0e0;
+    box-shadow: 0 2px 4px #e0e0e0;
 }
 
 @mixin box-shadow-heavy {
-    box-shadow: 0 2px 4px #ccc;
+    box-shadow: 0 3px 6px #ccc;
 }
