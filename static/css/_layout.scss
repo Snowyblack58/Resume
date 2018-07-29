@@ -1,0 +1,42 @@
+@import 'base';
+
+.intro {
+    margin: $font-size-h1 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+
+    .face {
+        display: grid;
+        align-items: center;
+        justify-items: right;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        img {
+            max-width: 250px;
+            width: 80%;
+            border: solid 4px $true-black;
+            border-left-color: $accent;
+            border-radius: 4px;
+            @include box-shadow;
+
+            &:hover {
+                @include box-shadow-heavy;
+            }
+        }
+    }
+
+    .contact {
+        box-sizing: border-box;
+        display: grid;
+        align-items: center;
+        padding: 1rem;
+
+        h1 {
+            border-left: solid 4px $accent;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

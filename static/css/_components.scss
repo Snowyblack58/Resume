@@ -31,6 +31,13 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.25px;
 }
 
+h1 {
+    font-size: $font-size-h1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: $anchor;
@@ -53,6 +60,11 @@ br {
     display: grid;
     grid-template-columns: 16rem 1fr;
     text-align: center;
+    padding-right: 12rem;
+    
+    @media only screen and (max-width: $breakpoint-xlg) {
+        padding-right: 0;
+    }
 
     @media only screen and (max-width: $breakpoint-lg) {
         grid-template-columns: 12rem 1fr;

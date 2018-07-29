@@ -21,12 +21,14 @@ $accent: #e53935;
 // Font
 $font-size: 14px;
 $font-size-muted: 12px;
+$font-size-h1: 48px;
 $font-stack-title: 'Raleway', sans-serif;
 $font-stack-text: 'Roboto', sans-serif;
 
 $line-height-default: 1.42857143;
 
 // Media queries
+$breakpoint-xlg: 1386px;
 $breakpoint-lg: 1006px;
 $breakpoint-md: 768px;
 $breakpoint-sm: 500px;
