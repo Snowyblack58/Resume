@@ -63,9 +63,16 @@ class IndexView(View):
     def get(self, request):
         context = {
             'sections': [
-                'banner',
                 'intro',
                 'experiences',
+                'skills',
+                'projects',
+            ],
+            'anchors': [
+                'intro',
+                'education',
+                'work',
+                'leadership',
                 'skills',
                 'projects',
             ],

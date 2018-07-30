@@ -1,5 +1,23 @@
 @import 'base';
 
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+            list-style: none;
+            display: inline-block;
+        
+            &::after {
+                content: '\2022';
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
 .intro {
     margin: $font-size-h1 0;
     padding: 2rem;
