@@ -13,11 +13,15 @@
                     <h4 class="card-title">
                         <a href="{{ project.project_link }}" target="_blank">{{ project.project_name }}</a>
                     </h4>
-                    <p class="card-date">{{ project.start_date }} -
-                        {% if project.is_present %} 
-                        Present
+                    <p class="card-date">
+                        {% if project.is_present %}
+                            {{ project.start_date }} - Present
                         {% else %}
-                        {{ project.end_date }}
+                            {% if project.is_one_month %}
+                                {{ project.start_date }}
+                            {% else %}
+                                {{ project.start_date}} - {{ project.end_date }}
+                            {% endif %}
                         {% endif %}
                     </p>
                 </div>

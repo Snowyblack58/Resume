@@ -15,11 +15,15 @@
                     <h4 class="card-title">
                         <a href="{{ exp.organization_link }}" target="_blank">{{ exp.organization }}</a>
                     </h4>
-                    <p class="card-date">{{ exp.start_date }} -
-                        {% if exp.is_present %} 
-                        Present
+                    <p class="card-date">
+                        {% if exp.is_present %}
+                            {{ exp.start_date }} - Present
                         {% else %}
-                        {{ exp.end_date }}
+                            {% if exp.is_one_month %}
+                                {{ exp.start_date }}
+                            {% else %}
+                                {{ exp.start_date}} - {{ exp.end_date }}
+                            {% endif %}
                         {% endif %}
                     </p>
                 </div>

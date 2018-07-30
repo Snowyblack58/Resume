@@ -29,6 +29,9 @@ class Experience(models.Model):
                 return readable
         return ''
 
+    def is_one_month(self):
+        return (self.end_date.month == self.start_date.month) and (self.end_date.year == self.start_date.year)
+
     def __str__(self):
         return '{}: {}'.format(
             self.get_experience_type_readable(),
@@ -48,6 +51,9 @@ class Project(models.Model):
 
     def is_present(self):
         return (self.end_date - localdate()).days >= 0
+
+    def is_one_month(self):
+        return (self.end_date.month == self.start_date.month) and (self.end_date.year == self.start_date.year)
 
     def __str__(self):
         return 'Project: {}'.format(self.project_name)

@@ -19,10 +19,12 @@ nav {
 }
 
 .intro {
+    background-color: $true-white;
     margin: $font-size-h1 0;
     padding: 2rem;
     display: grid;
     grid-template-columns: 50% 1fr;
+
 
     .face {
         display: grid;

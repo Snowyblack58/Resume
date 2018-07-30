@@ -39,6 +39,7 @@ class IndexView(View):
                 'start_date': exp.start_date,
                 'end_date': exp.end_date,
                 'is_present': exp.is_present(),
+                'is_one_month': exp.is_one_month(),
                 'description_sentences': self.tokenize_description(exp.description),
             })
         return grouped_exps
@@ -56,7 +57,9 @@ class IndexView(View):
                 'languages': project.languages,
                 'start_date': project.start_date,
                 'end_date': project.end_date,
-                'description': self.tokenize_description(project.description),
+                'is_present': project.is_present(),
+                'is_one_month': project.is_one_month(),
+                'description_sentences': self.tokenize_description(project.description),
             })
         return projects
 
