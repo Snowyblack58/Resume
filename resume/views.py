@@ -7,7 +7,7 @@ from django.views import View
 
 from .models import Experience, Project, Skill
 
-# Create your views here.
+
 class IndexView(View):
     def tokenize_description(self, text):
         return [s.strip() for s in text.split('\n') if s.strip()]
