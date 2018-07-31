@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
 
-from .models import Experience, Project
+from .models import Experience, Project, Skill
 
 # Create your views here.
 class IndexView(View):
@@ -63,23 +63,48 @@ class IndexView(View):
             })
         return projects
 
+    def get_raw_skills_in_order(self):
+        return Skill.objects.annotate(  # 1 is highest priority
+                priority=Case(
+                    When(skill_category='co', then=Value(1)),
+                    When(skill_category='wb', then=Value(2)),
+                    When(skill_category='da', then=Value(3)),
+                    When(skill_category='o', then=Value(4)),
+                    output_field=IntegerField()
+                )
+            ).order_by('priority', '-proficiency', 'skill_name')
+
+    def get_skills(self):
+        skills = self.get_raw_skills_in_order()
+        grouped_skills = OrderedDict()  # OrderedDict to order by priority
+        for skill in skills:
+            skill_category = skill.get_skill_category_readable()
+            if skill_category not in grouped_skills:
+                grouped_skills[skill_category] = []
+            grouped_skills[skill_category].append({
+                'name': skill.skill_name,
+                'proficiency': skill.proficiency,
+            })
+        return grouped_skills
+
     def get(self, request):
         context = {
             'sections': [
                 'intro',
                 'experiences',
-                'skills',
                 'projects',
+                'skills',
             ],
             'anchors': [
                 'intro',
                 'education',
                 'work',
                 'leadership',
-                'skills',
                 'projects',
+                'skills',
             ],
             'experiences': self.get_experiences(),
             'projects': self.get_projects(),
+            'skills': self.get_skills(),
         }
         return render(request, 'resume/index.html', context)

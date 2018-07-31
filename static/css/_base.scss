@@ -4,8 +4,9 @@ $true-black: #000;
 $off-white: #f8f8f8;
 $light-grey: #e0e0e0;
 
+$accent: #e53935;
+
 $anchor: #47b2e8;
-$anchor-hover: #e53935;
 
 $experience-primary: #47b2e8;
 $experience-50: #e2f4fc;
@@ -15,7 +16,12 @@ $project-primary: #ff9800;
 $project-50: #fff3e0;
 $project-800: #ef6c00;
 
-$accent: #e53935;
+$skills-primary: #4caf50;
+$skills-50: #e8f5e9;
+$skills-800: #087f23;
+
+$skill-meter-fg: $skills-primary;
+$skill-meter-bg: $light-grey;
 
 
 // Font

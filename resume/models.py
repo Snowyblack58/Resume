@@ -57,3 +57,34 @@ class Project(models.Model):
 
     def __str__(self):
         return 'Project: {}'.format(self.project_name)
+
+
+class Skill(models.Model):
+    SKILL_CATEGORIES = (
+        ('co', 'Core'),
+        ('wb', 'Web'),
+        ('da', 'Data'),
+        ('o', 'Other'),
+    )
+    LEVELS = [
+        (1, '1 Basic'),
+        (2, '2 Novice'),
+        (3, '3 Intermediate'),
+        (4, '4 Advanced'),
+        (5, '5 Expert'),
+    ]
+
+    skill_category = models.CharField(
+        max_length=2,
+        choices=SKILL_CATEGORIES)
+    skill_name = models.CharField(max_length=75)
+    proficiency = models.IntegerField(choices=LEVELS)
+
+    def get_skill_category_readable(self):
+        for abbreviation, readable in self.SKILL_CATEGORIES:
+            if abbreviation == self.skill_category:
+                return readable
+        return ''
+
+    def __str__(self):
+        return '{}: {}'.format(self.get_skill_category_readable(), self.skill_name)

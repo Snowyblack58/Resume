@@ -1,0 +1,38 @@
+<div class="card-group card-group-2-row card-group-skills">
+    <div class="card-group-title">
+        <h3>Skills</h3>
+    </div>
+    <div class="cards">
+        {% for group, group_skills in skills.items %}
+        <div class="card card-no-icon">
+            <div class="card-content-container">
+                <div class="card-header">
+                    <h4 class="card-title card-title-center">
+                        <a>{{ group }}</a>
+                    </h4>
+                    <p class="card-date"></p>
+                </div>
+                <div class="card-main">
+                    <p class="card-subtitle"></p>
+                    <p class="card-description">
+                        <ul class="skill-list">
+                            {% for skill in group_skills %}
+                            <li class="skill">
+                                <span>{{ skill.name }}</span>
+                                <div class="skill-meter-container">
+                                    <div class="skill-meter skill-meter-{{ skill.proficiency }}">
+                                        <div class="skill-meter-left"></div>
+                                        <div class="skill-meter-right"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </p>
+                    <p class="card-caption"></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
