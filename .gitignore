@@ -54,7 +54,6 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -103,7 +102,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-db.sqlite3
 env/
 .envrc
 **/__pycache__/
@@ -111,3 +109,7 @@ env/
 collected_static/
 
 node_modules/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
