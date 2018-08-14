@@ -88,6 +88,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.envrc
 
 # Spyder project settings
 .spyderproject
@@ -102,13 +103,24 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-env/
-.envrc
-**/__pycache__/
-*/__pycache__/
+# django
 collected_static/
 
+# pycache
+**/__pycache__/
+*/__pycache__/
+
+# sass
+.sass_cache/
+
+# npm
 node_modules/
+
+# nginx/uwsgi
+nginx.conf
+uwsgi_params
+personal/personal.ini
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

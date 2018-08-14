@@ -20,12 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '8a82q@o9r1+6(3w0m#-v1%3#hhntklfijmh9d2cq_fnq-1ucao'
+with open('/etc/secret_key.txt', 'r') as infile:
+    SECRET_KEY = infile.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'davidzhao.me', 'www.davidzhao.me']
 APPEND_SLASH = True
 
 # Application definition
@@ -158,5 +159,4 @@ PIPELINE = {
 PIPELINE['COMPILERS'] = (
 	'pipeline.compilers.sass.SASSCompiler',
 )
-
-PIPELINE['SASS_BINARY'] = 'C:/Ruby24-x64/bin/sass.bat'
+PIPELINE['SASS_BINARY'] = '/usr/bin/sass'
