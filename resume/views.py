@@ -15,8 +15,8 @@ class IndexView(View):
     def get_raw_experiences_in_order(self):
         return Experience.objects.annotate(  # 1 is highest priority
                 priority=Case(
-                    When(experience_type='e', then=Value(1)),
-                    When(experience_type='w', then=Value(2)),
+                    When(experience_type='e', then=Value(2)),
+                    When(experience_type='w', then=Value(1)),
                     When(experience_type='l', then=Value(3)),
                     output_field=IntegerField()
                 )
