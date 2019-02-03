@@ -1,0 +1,46 @@
+{% for exp_type, group in experiences.items %}
+<a name="{{ exp_type.lower }}"></a>
+<div class="card-group card-group-experiences">
+    <div class="card-group-title">
+        <h3>{{ exp_type }}</h3>
+    </div>
+    <div class="cards">
+        {% for exp in group %}
+        <div class="card">
+            <div class="card-icon">
+                <img src="{{ exp.logo_url }}" alt="{{ exp.organization }}">
+            </div>
+            <div class="card-content-container">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        <a href="{{ exp.organization_link }}" target="_blank">{{ exp.organization }}</a>
+                    </h4>
+                    <p class="card-date">
+                        {% if exp.is_present %}
+                            {{ exp.start_date }} - Present
+                        {% else %}
+                            {% if exp.is_one_month %}
+                                {{ exp.start_date }}
+                            {% else %}
+                                {{ exp.start_date}} - {{ exp.end_date }}
+                            {% endif %}
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="card-main">
+                    <p class="card-subtitle">{{ exp.subtitle }}</p>
+                    <p class="card-description">
+                        {% for sentence in exp.description_sentences %}
+                            {% if not forloop.first %}
+                                <br>
+                            {% endif %}
+                            {{ sentence }}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}

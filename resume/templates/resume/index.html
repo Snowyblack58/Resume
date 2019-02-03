@@ -1,0 +1,16 @@
+{% extends 'page_base.html' %}
+
+{% block body %}
+
+{% include 'header.html' %}
+
+{% for section in sections %}
+<a name="{{ section }}"></a>
+<section class='{{ section }}'>
+    {% include section|add:'.html' %}
+</section>
+{% endfor %}
+
+{% include 'footer.html' %}
+
+{% endblock body %}

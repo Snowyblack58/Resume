@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <section class="search-section">
+    <div class="search-container">
+      <h4 id="search-text">How can I help</h4>
+      <span type="text" id="search-bar" contenteditable="true"></span>
+      <button id="search-button">></button>
+    </div>
+  </section>
+
+  <div class="row coa-container">
+    <div class="col-sm-12 coa-section">
+      <div class="coa-group" id="volunteer">
+        <h3 class="coa-group-title">Volunteer</h3>
+      </div>
+      <div class="coa-group" id="donations">
+        <h3 class="coa-group-title">Donations</h3>
+      </div>
+      <div class="coa-group" id="other">
+        <h3 class="coa-group-title">Other</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

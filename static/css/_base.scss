@@ -1,0 +1,49 @@
+// Colors
+$true-white: #fff;
+$true-black: #000;
+$off-white: #f8f8f8;
+$light-grey: #e0e0e0;
+
+$accent: #e53935;
+
+$anchor: #47b2e8;
+
+$experience-primary: #47b2e8;
+$experience-50: #e2f4fc;
+$experience-800: #2a74ad;
+
+$project-primary: #ff9800;
+$project-50: #fff3e0;
+$project-800: #ef6c00;
+
+$skills-primary: #4caf50;
+$skills-50: #e8f5e9;
+$skills-800: #087f23;
+
+$skill-meter-fg: $skills-primary;
+$skill-meter-bg: $light-grey;
+
+
+// Font
+$font-size: 14px;
+$font-size-muted: 12px;
+$font-size-h1: 48px;
+$font-stack-title: 'Raleway', sans-serif;
+$font-stack-text: 'Roboto', sans-serif;
+
+$line-height-default: 1.42857143;
+
+// Media queries
+$breakpoint-xlg: 1386px;
+$breakpoint-lg: 1006px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 500px;
+
+// Mixins
+@mixin box-shadow {
+    box-shadow: 0 2px 4px #e0e0e0;
+}
+
+@mixin box-shadow-heavy {
+    box-shadow: 0 3px 6px #ccc;
+}
