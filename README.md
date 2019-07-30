@@ -1,6 +1,7 @@
 # Resume
 
-Live @ [http://davidzhao.me/Resume/](http://davidzhao.me/Resume/)
+New Version @ [http://davidzhao.me/](http://davidzhao.me/)
+Live @ [http://davidbzhao.github.io/Resume](http://davidbzhao.github.io/Resume)
 
 ## How it works
 
